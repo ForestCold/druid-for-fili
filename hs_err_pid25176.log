@@ -1,0 +1,338 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 5726797824 bytes for committing reserved memory.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_linux.cpp:2640), pid=25176, tid=0x00002b07171b7700
+#
+# JRE version:  (8.0_131-b11) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.131-b11 mixed mode linux-amd64 compressed oops)
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00002b071800b000):  JavaThread "Unknown thread" [_thread_in_vm, id=25179, stack(0x00002b07170b7000,0x00002b07171b8000)]
+
+Stack: [0x00002b07170b7000,0x00002b07171b8000],  sp=0x00002b07171b6320,  free space=1020k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0xac826a]  VMError::report_and_die()+0x2ba
+V  [libjvm.so+0x4fd4cb]  report_vm_out_of_memory(char const*, int, unsigned long, VMErrorType, char const*)+0x8b
+V  [libjvm.so+0x924f53]  os::Linux::commit_memory_impl(char*, unsigned long, bool)+0x103
+V  [libjvm.so+0x9254a9]  os::pd_commit_memory(char*, unsigned long, unsigned long, bool)+0x29
+V  [libjvm.so+0x91f6ca]  os::commit_memory(char*, unsigned long, unsigned long, bool)+0x2a
+V  [libjvm.so+0x9941e3]  PSVirtualSpace::expand_by(unsigned long)+0x53
+V  [libjvm.so+0x9842f7]  PSOldGen::initialize(ReservedSpace, unsigned long, char const*, int)+0xb7
+V  [libjvm.so+0x2d8cea]  AdjoiningGenerations::AdjoiningGenerations(ReservedSpace, GenerationSizer*, unsigned long)+0x39a
+V  [libjvm.so+0x9485c6]  ParallelScavengeHeap::initialize()+0x1d6
+V  [libjvm.so+0xa902e3]  Universe::initialize_heap()+0xf3
+V  [libjvm.so+0xa9084e]  universe_init()+0x3e
+V  [libjvm.so+0x63e3e5]  init_globals()+0x65
+V  [libjvm.so+0xa73f3e]  Threads::create_vm(JavaVMInitArgs*, bool*)+0x23e
+V  [libjvm.so+0x6d2ce4]  JNI_CreateJavaVM+0x74
+C  [libjli.so+0x745e]  JavaMain+0x9e
+C  [libpthread.so.0+0x7aa1]  start_thread+0xd1
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00002b071800b000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=25179, stack(0x00002b07170b7000,0x00002b07171b8000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+00400000-00401000 r-xp 00000000 fc:00 659017                             /home/y/libexec64/jdk64-1.8.0/bin/java
+00600000-00601000 rw-p 00000000 fc:00 659017                             /home/y/libexec64/jdk64-1.8.0/bin/java
+02509000-0252a000 rw-p 00000000 00:00 0                                  [heap]
+715580000-7c0000000 rw-p 00000000 00:00 0 
+2b071521f000-2b071523f000 r-xp 00000000 fc:00 22020                      /lib64/ld-2.12.so
+2b071523f000-2b0715240000 rw-p 00000000 00:00 0 
+2b071543f000-2b0715440000 r--p 00020000 fc:00 22020                      /lib64/ld-2.12.so
+2b0715440000-2b0715441000 rw-p 00021000 fc:00 22020                      /lib64/ld-2.12.so
+2b0715441000-2b0715442000 rw-p 00000000 00:00 0 
+2b0715442000-2b0715459000 r-xp 00000000 fc:00 21989                      /lib64/libpthread-2.12.so
+2b0715459000-2b0715659000 ---p 00017000 fc:00 21989                      /lib64/libpthread-2.12.so
+2b0715659000-2b071565a000 r--p 00017000 fc:00 21989                      /lib64/libpthread-2.12.so
+2b071565a000-2b071565b000 rw-p 00018000 fc:00 21989                      /lib64/libpthread-2.12.so
+2b071565b000-2b0715660000 rw-p 00000000 00:00 0 
+2b0715660000-2b0715675000 r-xp 00000000 fc:00 787133                     /home/y/libexec64/jdk64-1.8.0/lib/amd64/jli/libjli.so
+2b0715675000-2b0715875000 ---p 00015000 fc:00 787133                     /home/y/libexec64/jdk64-1.8.0/lib/amd64/jli/libjli.so
+2b0715875000-2b0715876000 rw-p 00015000 fc:00 787133                     /home/y/libexec64/jdk64-1.8.0/lib/amd64/jli/libjli.so
+2b0715876000-2b0715878000 r-xp 00000000 fc:00 22007                      /lib64/libdl-2.12.so
+2b0715878000-2b0715a78000 ---p 00002000 fc:00 22007                      /lib64/libdl-2.12.so
+2b0715a78000-2b0715a79000 r--p 00002000 fc:00 22007                      /lib64/libdl-2.12.so
+2b0715a79000-2b0715a7a000 rw-p 00003000 fc:00 22007                      /lib64/libdl-2.12.so
+2b0715a7a000-2b0715c04000 r-xp 00000000 fc:00 22013                      /lib64/libc-2.12.so
+2b0715c04000-2b0715e04000 ---p 0018a000 fc:00 22013                      /lib64/libc-2.12.so
+2b0715e04000-2b0715e08000 r--p 0018a000 fc:00 22013                      /lib64/libc-2.12.so
+2b0715e08000-2b0715e0a000 rw-p 0018e000 fc:00 22013                      /lib64/libc-2.12.so
+2b0715e0a000-2b0715e10000 rw-p 00000000 00:00 0 
+2b0715e10000-2b0716adf000 r-xp 00000000 fc:00 787965                     /home/y/libexec64/jdk64-1.8.0/jre/lib/amd64/server/libjvm.so
+2b0716adf000-2b0716cdf000 ---p 00ccf000 fc:00 787965                     /home/y/libexec64/jdk64-1.8.0/jre/lib/amd64/server/libjvm.so
+2b0716cdf000-2b0716db8000 rw-p 00ccf000 fc:00 787965                     /home/y/libexec64/jdk64-1.8.0/jre/lib/amd64/server/libjvm.so
+2b0716db8000-2b0716e03000 rw-p 00000000 00:00 0 
+2b0716e33000-2b0716eb6000 r-xp 00000000 fc:00 22005                      /lib64/libm-2.12.so
+2b0716eb6000-2b07170b5000 ---p 00083000 fc:00 22005                      /lib64/libm-2.12.so
+2b07170b5000-2b07170b6000 r--p 00082000 fc:00 22005                      /lib64/libm-2.12.so
+2b07170b6000-2b07170b7000 rw-p 00083000 fc:00 22005                      /lib64/libm-2.12.so
+2b07170b7000-2b07170ba000 ---p 00000000 00:00 0 
+2b07170ba000-2b07171b8000 rw-p 00000000 00:00 0 
+2b07171e8000-2b07171ef000 r-xp 00000000 fc:00 21985                      /lib64/librt-2.12.so
+2b07171ef000-2b07173ee000 ---p 00007000 fc:00 21985                      /lib64/librt-2.12.so
+2b07173ee000-2b07173ef000 r--p 00006000 fc:00 21985                      /lib64/librt-2.12.so
+2b07173ef000-2b07173f0000 rw-p 00007000 fc:00 21985                      /lib64/librt-2.12.so
+2b07173f0000-2b07173fd000 r-xp 00000000 fc:00 787969                     /home/y/libexec64/jdk64-1.8.0/jre/lib/amd64/libverify.so
+2b07173fd000-2b07175fc000 ---p 0000d000 fc:00 787969                     /home/y/libexec64/jdk64-1.8.0/jre/lib/amd64/libverify.so
+2b07175fc000-2b07175fe000 rw-p 0000c000 fc:00 787969                     /home/y/libexec64/jdk64-1.8.0/jre/lib/amd64/libverify.so
+2b07175fe000-2b0717629000 r-xp 00000000 fc:00 788012                     /home/y/libexec64/jdk64-1.8.0/jre/lib/amd64/libjava.so
+2b0717629000-2b0717828000 ---p 0002b000 fc:00 788012                     /home/y/libexec64/jdk64-1.8.0/jre/lib/amd64/libjava.so
+2b0717828000-2b071782a000 rw-p 0002a000 fc:00 788012                     /home/y/libexec64/jdk64-1.8.0/jre/lib/amd64/libjava.so
+2b071782a000-2b071782b000 r--p 00000000 00:00 0 
+2b071782b000-2b071782c000 rw-p 00000000 00:00 0 
+2b071782c000-2b0717834000 rw-s 00000000 fc:00 658094                     /tmp/hsperfdata_ylin08/25176
+2b071785c000-2b0717869000 r-xp 00000000 fc:00 21997                      /lib64/libnss_files-2.12.so
+2b0717869000-2b0717a68000 ---p 0000d000 fc:00 21997                      /lib64/libnss_files-2.12.so
+2b0717a68000-2b0717a69000 r--p 0000c000 fc:00 21997                      /lib64/libnss_files-2.12.so
+2b0717a69000-2b0717a6a000 rw-p 0000d000 fc:00 21997                      /lib64/libnss_files-2.12.so
+2b0717a6a000-2b0717a84000 r-xp 00000000 fc:00 787996                     /home/y/libexec64/jdk64-1.8.0/jre/lib/amd64/libzip.so
+2b0717a84000-2b0717c84000 ---p 0001a000 fc:00 787996                     /home/y/libexec64/jdk64-1.8.0/jre/lib/amd64/libzip.so
+2b0717c84000-2b0717c85000 rw-p 0001a000 fc:00 787996                     /home/y/libexec64/jdk64-1.8.0/jre/lib/amd64/libzip.so
+2b0718000000-2b0718034000 rw-p 00000000 00:00 0 
+2b0718034000-2b071c000000 ---p 00000000 00:00 0 
+2b071c000000-2b071c270000 rwxp 00000000 00:00 0 
+2b071c270000-2b072b000000 ---p 00000000 00:00 0 
+2b072b000000-2b072b00a000 rw-p 00000000 00:00 0 
+2b072b00a000-2b072be6a000 ---p 00000000 00:00 0 
+2b072be6a000-2b072c64b000 rw-p 00000000 00:00 0 
+7ffc19b9f000-7ffc19cb4000 rw-p 00000000 00:00 0                          [stack]
+7ffc19d4a000-7ffc19d4b000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Djava.library.path=/home/y/lib64 -Xms8g -Xmx8g -XX:MaxDirectMemorySize=4096m -Duser.timezone=UTC -Dfile.encoding=UTF-8 -Djava.io.tmpdir=var/tmp -Djava.util.logging.manager=org.apache.logging.log4j.jul.LogManager 
+java_command: io.druid.cli.Main server historical
+java_class_path (initial): conf/druid/_common:conf/druid/historical:lib/commons-math3-3.6.1.jar:lib/async-http-client-netty-utils-2.0.37.jar:lib/jackson-databind-2.4.6.jar:lib/aether-spi-0.9.0.M2.jar:lib/aether-api-0.9.0.M2.jar:lib/jackson-module-jaxb-annotations-2.4.6.jar:lib/jline-0.9.94.jar:lib/httpcore-4.4.3.jar:lib/avatica-core-1.9.0.jar:lib/jackson-core-2.4.6.jar:lib/curator-x-discovery-4.0.0.jar:lib/druid-server-0.11.0.jar:lib/aether-impl-0.9.0.M2.jar:lib/commons-lang3-3.2.jar:lib/base64-2.3.8.jar:lib/jersey-guice-1.19.3.jar:lib/commons-dbcp2-2.0.1.jar:lib/jersey-server-1.19.3.jar:lib/spymemcached-2.12.3.jar:lib/javax.inject-1.jar:lib/jetty-security-9.3.19.v20170502.jar:lib/asm-commons-5.2.jar:lib/jetty-http-9.3.19.v20170502.jar:lib/guava-16.0.1.jar:lib/netty-resolver-dns-2.0.37.jar:lib/jsr305-2.0.1.jar:lib/geoip2-0.4.0.jar:lib/reactive-streams-1.0.0.jar:lib/plexus-interpolation-1.19.jar:lib/netty-resolver-2.0.37.jar:lib/commons-dbcp-1.4.jar:lib/jetty-client-9.3.19.v20170502.jar:lib/netty-buffer-4.0.52.Final.jar:lib/jersey-servlet-1.19.3.jar:lib/commons-io-2.5.jar:lib/netty-handler-4.0.52.Final.jar:lib/jets3t-0.9.4.jar:lib/jackson-jaxrs-json-provider-2.4.6.jar:lib/lz4-1.3.0.jar:lib/netty-codec-dns-2.0.37.jar:lib/druid-sql-0.11.0.jar:lib/maven-repository-metadata-3.1.1.jar:lib/jersey-core-1.19.3.jar:lib/curator-recipes-4.0.0.jar:lib/jackson-datatype-guava-2.4.6.jar:lib/joni-2.1.11.jar:lib/joda-time-2.9.9.jar:lib/jackson-dataformat-cbor-2.5.3.jar:lib/extendedset-0.11.0.jar:lib/jackson-annotations-2.4.6.jar:lib/druid-hll-0.11.0.jar:lib/aether-connector-file-0.9.0.M2.jar:lib/curator-client-4.0.0.jar:lib/okhttp-1.0.2.jar:lib/commons-codec-1.7.jar:lib/config-magic-0.9.jar:lib/maven-settings-3.1.1.jar:lib/java-util-1.3.2.jar:lib/java-xmlbuilder-1.1.jar:lib/druid-services-0.11.0.jar:lib/jackson-datatype-joda-2.4.6.jar:lib/slf4j-api-1.6.4.jar:lib/commons-pool2-2.2.jar:lib/guice-4.1.0.jar:lib/jackson-dataformat-smile-2.4.6.jar:lib/json-path-2.1.0.jar:lib/netty-reacti
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=/home/y/share/yjava_jdk/java
+PATH=/home/y/bin64:/home/y/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/ylin08/bin:/home/ylin08/apache-maven-3.3.9/bin
+SHELL=/bin/bash
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0xac8af0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.so+0xac8af0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.so+0x921dd0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.so+0x921dd0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.so+0x921dd0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.so+0x921dd0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR1: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGUSR2: [libjvm.so+0x923610], sa_mask[0]=00000000000000000000000000000000, sa_flags=SA_RESTART|SA_SIGINFO
+SIGHUP: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGINT: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGTERM: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGQUIT: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+
+
+---------------  S Y S T E M  ---------------
+
+OS:Red Hat Enterprise Linux Server release 6.8 (Santiago)
+
+uname:Linux 2.6.32-696.6.3.el6.YAHOO.20170712.4.x86_64 #1 SMP Wed Jul 12 01:40:52 UTC 2017 x86_64
+libc:glibc 2.12 NPTL 2.12 
+rlimit: STACK 10240k, CORE 0k, NPROC 31883, NOFILE 16384, AS infinity
+load average:0.07 0.06 0.17
+
+/proc/meminfo:
+MemTotal:        8193152 kB
+MemFree:         4414056 kB
+Buffers:          170372 kB
+Cached:           979080 kB
+SwapCached:            0 kB
+Active:          3327912 kB
+Inactive:         181484 kB
+Active(anon):    2360212 kB
+Inactive(anon):      172 kB
+Active(file):     967700 kB
+Inactive(file):   181312 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:               108 kB
+Writeback:             0 kB
+AnonPages:       2356228 kB
+Mapped:            34448 kB
+Shmem:               184 kB
+Slab:             178484 kB
+SReclaimable:     146400 kB
+SUnreclaim:        32084 kB
+KernelStack:        9680 kB
+PageTables:        13268 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     4096576 kB
+Committed_AS:    6878132 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       25864 kB
+VmallocChunk:   34359705976 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:   1853440 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:        5992 kB
+DirectMap2M:     2091008 kB
+DirectMap1G:     6291456 kB
+
+
+CPU:total 4 (initial active 4) (1 cores per cpu, 1 threads per core) family 6 model 62 stepping 4, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, clmul, erms, tsc
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2620 v2 @ 2.10GHz
+stepping	: 4
+microcode	: 1
+cpu MHz		: 2094.950
+cache size	: 16384 KB
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good xtopology unfair_spinlock pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm arat xsaveopt fsgsbase smep erms
+bogomips	: 4189.90
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2620 v2 @ 2.10GHz
+stepping	: 4
+microcode	: 1
+cpu MHz		: 2094.950
+cache size	: 16384 KB
+physical id	: 1
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good xtopology unfair_spinlock pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm arat xsaveopt fsgsbase smep erms
+bogomips	: 4189.90
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2620 v2 @ 2.10GHz
+stepping	: 4
+microcode	: 1
+cpu MHz		: 2094.950
+cache size	: 16384 KB
+physical id	: 2
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good xtopology unfair_spinlock pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm arat xsaveopt fsgsbase smep erms
+bogomips	: 4189.90
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2620 v2 @ 2.10GHz
+stepping	: 4
+microcode	: 1
+cpu MHz		: 2094.950
+cache size	: 16384 KB
+physical id	: 3
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good xtopology unfair_spinlock pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm arat xsaveopt fsgsbase smep erms
+bogomips	: 4189.90
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 8193152k(4414056k free), swap 0k(0k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.131-b11) for linux-amd64 JRE (1.8.0_131-b11), built on Mar 15 2017 01:23:40 by "java_re" with gcc 4.3.0 20080428 (Red Hat 4.3.0-8)
+
+time: Thu Jun 28 20:55:16 2018
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

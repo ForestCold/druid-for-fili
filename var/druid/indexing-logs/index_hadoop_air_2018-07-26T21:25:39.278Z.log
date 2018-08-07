@@ -1,0 +1,997 @@
+2018-07-26T21:25:41,461 INFO [main] io.druid.guice.PropertiesModule - Loading properties from common.runtime.properties
+2018-07-26T21:25:41,464 INFO [main] io.druid.guice.PropertiesModule - Loading properties from runtime.properties
+2018-07-26T21:25:41,526 INFO [main] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.3.Final
+2018-07-26T21:25:42,207 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.guice.ExtensionsConfig] from props[druid.extensions.] as [ExtensionsConfig{searchCurrentClassloader=true, directory='extensions', hadoopDependenciesDir='hadoop-dependencies', hadoopContainerDruidClasspath='null', addExtensionsToHadoopContainer=false, loadList=[druid-datasketches]}]
+2018-07-26T21:25:42,298 INFO [main] io.druid.initialization.Initialization - Loading extension [druid-datasketches] for class [interface io.druid.cli.CliCommandCreator]
+2018-07-26T21:25:42,318 INFO [main] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/extensions/druid-datasketches/memory-0.8.4.jar]
+2018-07-26T21:25:42,318 INFO [main] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/extensions/druid-datasketches/sketches-core-0.8.4.jar]
+2018-07-26T21:25:42,318 INFO [main] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/extensions/druid-datasketches/druid-datasketches-0.11.0.jar]
+2018-07-26T21:25:42,465 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.guice.ModulesConfig] from props[druid.modules.] as [ModulesConfig{excludeList=[]}]
+2018-07-26T21:25:42,612 INFO [main] io.druid.initialization.Initialization - Loading extension [druid-datasketches] for class [interface io.druid.initialization.DruidModule]
+2018-07-26T21:25:42,616 INFO [main] io.druid.initialization.Initialization - Adding implementation [io.druid.query.aggregation.datasketches.theta.SketchModule] for class [interface io.druid.initialization.DruidModule] from local file system extension
+2018-07-26T21:25:42,617 INFO [main] io.druid.initialization.Initialization - Adding implementation [io.druid.query.aggregation.datasketches.theta.oldapi.OldApiSketchModule] for class [interface io.druid.initialization.DruidModule] from local file system extension
+2018-07-26T21:25:44,021 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class com.metamx.emitter.core.LoggingEmitterConfig] from props[druid.emitter.logging.] as [LoggingEmitterConfig{loggerClass='com.metamx.emitter.core.LoggingEmitter', logLevel='info'}]
+2018-07-26T21:25:44,061 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[interface io.druid.server.security.Escalator] from props[druid.escalator.] as [io.druid.server.security.NoopEscalator@6ae7deac]
+2018-07-26T21:25:44,079 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.curator.CuratorConfig] from props[druid.zk.service.] as [io.druid.curator.CuratorConfig@63fdffcd]
+2018-07-26T21:25:44,090 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.curator.ExhibitorConfig] from props[druid.exhibitor.service.] as [io.druid.curator.ExhibitorConfig@51d143a1]
+2018-07-26T21:25:44,186 INFO [main] org.apache.curator.utils.Compatibility - Running in ZooKeeper 3.4.x compatibility mode
+2018-07-26T21:25:44,188 WARN [main] org.apache.curator.retry.ExponentialBackoffRetry - maxRetries too large (30). Pinning to 29
+2018-07-26T21:25:44,286 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.server.DruidNode] from props[druid.] as [DruidNode{serviceName='druid/middleManager', host='attemptcontempt.corp.ne1.yahoo.com', port=-1, plaintextPort=8100, enablePlaintextPort=true, tlsPort=-1, enableTlsPort=false}]
+2018-07-26T21:25:44,293 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.server.initialization.ZkPathsConfig] from props[druid.zk.paths.] as [io.druid.server.initialization.ZkPathsConfig@22e2266d]
+2018-07-26T21:25:44,308 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.server.security.AuthConfig] from props[druid.auth.] as [AuthConfig{authenticatorChain='null', authorizers='null'}]
+2018-07-26T21:25:44,387 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.server.metrics.DruidMonitorSchedulerConfig] from props[druid.monitoring.] as [io.druid.server.metrics.DruidMonitorSchedulerConfig@2330e3e0]
+2018-07-26T21:25:44,401 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.server.metrics.MonitorsConfig] from props[druid.monitoring.] as [MonitorsConfig{monitors=[class com.metamx.metrics.JvmMonitor]}]
+2018-07-26T21:25:44,402 INFO [main] io.druid.server.emitter.EmitterModule - Underlying emitter for ServiceEmitter: LoggingEmitter{log=com.metamx.common.logger.Logger@476e8796, level=INFO}
+2018-07-26T21:25:44,557 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.query.lookup.LookupConfig] from props[druid.lookup.] as [LookupConfig{snapshotWorkingDir='', enableLookupSyncOnStartup=true, numLookupLoadingThreads=2, coordinatorFetchRetries=3, lookupStartRetries=3}]
+2018-07-26T21:25:44,565 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.guice.http.DruidHttpClientConfig] from props[druid.global.http.] as [io.druid.guice.http.DruidHttpClientConfig@2f66f0d0]
+2018-07-26T21:25:44,732 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.client.coordinator.CoordinatorSelectorConfig] from props[druid.selectors.coordinator.] as [io.druid.client.coordinator.CoordinatorSelectorConfig@2133661d]
+2018-07-26T21:25:44,736 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.server.initialization.CuratorDiscoveryConfig] from props[druid.discovery.curator.] as [io.druid.server.initialization.CuratorDiscoveryConfig@7a04fea7]
+2018-07-26T21:25:44,984 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.query.lookup.LookupListeningAnnouncerConfig] from props[druid.lookup.] as [ListeningAnnouncerConfig{listenersPath='/druid/listeners'}]
+2018-07-26T21:25:45,098 INFO [main] io.druid.guice.PropertiesModule - Loading properties from common.runtime.properties
+2018-07-26T21:25:45,100 INFO [main] io.druid.guice.PropertiesModule - Loading properties from runtime.properties
+2018-07-26T21:25:45,118 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.guice.ExtensionsConfig] from props[druid.extensions.] as [ExtensionsConfig{searchCurrentClassloader=true, directory='extensions', hadoopDependenciesDir='hadoop-dependencies', hadoopContainerDruidClasspath='null', addExtensionsToHadoopContainer=false, loadList=[druid-datasketches]}]
+2018-07-26T21:25:45,143 INFO [main] io.druid.server.metrics.MetricsModule - Adding monitor[com.metamx.metrics.JvmMonitor@79b2852b]
+2018-07-26T21:25:45,145 INFO [main] io.druid.server.metrics.MetricsModule - Adding monitor[io.druid.query.ExecutorServiceMonitor@4b0b64cc]
+2018-07-26T21:25:45,145 INFO [main] io.druid.server.metrics.MetricsModule - Adding monitor[io.druid.server.initialization.jetty.JettyServerModule$JettyMonitor@404db674]
+2018-07-26T21:25:45,153 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.server.log.StartupLoggingConfig] from props[druid.startup.logging.] as [io.druid.server.log.StartupLoggingConfig@4730e0f0]
+2018-07-26T21:25:45,154 INFO [main] io.druid.cli.CliPeon - Starting up with processors[4], memory[197,132,288], maxMemory[1,908,932,608].
+2018-07-26T21:25:45,154 INFO [main] io.druid.cli.CliPeon - * awt.toolkit: sun.awt.X11.XToolkit
+2018-07-26T21:25:45,155 INFO [main] io.druid.cli.CliPeon - * druid.emitter: logging
+2018-07-26T21:25:45,155 INFO [main] io.druid.cli.CliPeon - * druid.emitter.logging.logLevel: info
+2018-07-26T21:25:45,155 INFO [main] io.druid.cli.CliPeon - * druid.extensions.loadList: ["druid-datasketches"]
+2018-07-26T21:25:45,155 INFO [main] io.druid.cli.CliPeon - * druid.host: attemptcontempt.corp.ne1.yahoo.com
+2018-07-26T21:25:45,155 INFO [main] io.druid.cli.CliPeon - * druid.indexer.fork.property.druid.processing.buffer.sizeBytes: 256000000
+2018-07-26T21:25:45,155 INFO [main] io.druid.cli.CliPeon - * druid.indexer.fork.property.druid.processing.numThreads: 2
+2018-07-26T21:25:45,156 INFO [main] io.druid.cli.CliPeon - * druid.indexer.logs.directory: var/druid/indexing-logs
+2018-07-26T21:25:45,156 INFO [main] io.druid.cli.CliPeon - * druid.indexer.logs.type: file
+2018-07-26T21:25:45,156 INFO [main] io.druid.cli.CliPeon - * druid.indexer.runner.javaOpts: -server -Xmx2g -Duser.timezone=UTC -Dfile.encoding=UTF-8 -Djava.util.logging.manager=org.apache.logging.log4j.jul.LogManager
+2018-07-26T21:25:45,156 INFO [main] io.druid.cli.CliPeon - * druid.indexer.task.baseTaskDir: var/druid/task
+2018-07-26T21:25:45,156 INFO [main] io.druid.cli.CliPeon - * druid.indexer.task.defaultHadoopCoordinates: ["org.apache.hadoop:hadoop-client:2.7.3"]
+2018-07-26T21:25:45,156 INFO [main] io.druid.cli.CliPeon - * druid.indexer.task.hadoopWorkingPath: var/druid/hadoop-tmp
+2018-07-26T21:25:45,156 INFO [main] io.druid.cli.CliPeon - * druid.indexing.doubleStorage: double
+2018-07-26T21:25:45,157 INFO [main] io.druid.cli.CliPeon - * druid.metadata.storage.connector.connectURI: jdbc:derby://localhost:1527/var/druid/metadata.db;create=true
+2018-07-26T21:25:45,157 INFO [main] io.druid.cli.CliPeon - * druid.metadata.storage.connector.host: localhost
+2018-07-26T21:25:45,157 INFO [main] io.druid.cli.CliPeon - * druid.metadata.storage.connector.port: 1527
+2018-07-26T21:25:45,157 INFO [main] io.druid.cli.CliPeon - * druid.metadata.storage.type: derby
+2018-07-26T21:25:45,157 INFO [main] io.druid.cli.CliPeon - * druid.metrics.emitter.dimension.dataSource: air
+2018-07-26T21:25:45,157 INFO [main] io.druid.cli.CliPeon - * druid.metrics.emitter.dimension.taskId: index_hadoop_air_2018-07-26T21:25:39.278Z
+2018-07-26T21:25:45,157 INFO [main] io.druid.cli.CliPeon - * druid.monitoring.monitors: ["com.metamx.metrics.JvmMonitor"]
+2018-07-26T21:25:45,158 INFO [main] io.druid.cli.CliPeon - * druid.port: 8100
+2018-07-26T21:25:45,158 INFO [main] io.druid.cli.CliPeon - * druid.processing.buffer.sizeBytes: 256000000
+2018-07-26T21:25:45,158 INFO [main] io.druid.cli.CliPeon - * druid.processing.numThreads: 2
+2018-07-26T21:25:45,158 INFO [main] io.druid.cli.CliPeon - * druid.selectors.coordinator.serviceName: druid/coordinator
+2018-07-26T21:25:45,158 INFO [main] io.druid.cli.CliPeon - * druid.selectors.indexing.serviceName: druid/overlord
+2018-07-26T21:25:45,158 INFO [main] io.druid.cli.CliPeon - * druid.server.http.numThreads: 9
+2018-07-26T21:25:45,158 INFO [main] io.druid.cli.CliPeon - * druid.service: druid/middleManager
+2018-07-26T21:25:45,159 INFO [main] io.druid.cli.CliPeon - * druid.startup.logging.logProperties: true
+2018-07-26T21:25:45,159 INFO [main] io.druid.cli.CliPeon - * druid.storage.storageDirectory: var/druid/segments
+2018-07-26T21:25:45,159 INFO [main] io.druid.cli.CliPeon - * druid.storage.type: local
+2018-07-26T21:25:45,159 INFO [main] io.druid.cli.CliPeon - * druid.tlsPort: -1
+2018-07-26T21:25:45,159 INFO [main] io.druid.cli.CliPeon - * druid.worker.capacity: 3
+2018-07-26T21:25:45,159 INFO [main] io.druid.cli.CliPeon - * druid.zk.paths.base: /druid
+2018-07-26T21:25:45,159 INFO [main] io.druid.cli.CliPeon - * druid.zk.service.host: localhost
+2018-07-26T21:25:45,160 INFO [main] io.druid.cli.CliPeon - * file.encoding: UTF-8
+2018-07-26T21:25:45,160 INFO [main] io.druid.cli.CliPeon - * file.encoding.pkg: sun.io
+2018-07-26T21:25:45,160 INFO [main] io.druid.cli.CliPeon - * file.separator: /
+2018-07-26T21:25:45,160 INFO [main] io.druid.cli.CliPeon - * java.awt.graphicsenv: sun.awt.X11GraphicsEnvironment
+2018-07-26T21:25:45,160 INFO [main] io.druid.cli.CliPeon - * java.awt.printerjob: sun.print.PSPrinterJob
+2018-07-26T21:25:45,160 INFO [main] io.druid.cli.CliPeon - * java.class.path: conf-quickstart/druid/_common:conf-quickstart/druid/middleManager:lib/commons-math3-3.6.1.jar:lib/async-http-client-netty-utils-2.0.37.jar:lib/jackson-databind-2.4.6.jar:lib/aether-spi-0.9.0.M2.jar:lib/aether-api-0.9.0.M2.jar:lib/jackson-module-jaxb-annotations-2.4.6.jar:lib/jline-0.9.94.jar:lib/httpcore-4.4.3.jar:lib/avatica-core-1.9.0.jar:lib/jackson-core-2.4.6.jar:lib/curator-x-discovery-4.0.0.jar:lib/druid-server-0.11.0.jar:lib/aether-impl-0.9.0.M2.jar:lib/commons-lang3-3.2.jar:lib/base64-2.3.8.jar:lib/jersey-guice-1.19.3.jar:lib/commons-dbcp2-2.0.1.jar:lib/jersey-server-1.19.3.jar:lib/spymemcached-2.12.3.jar:lib/javax.inject-1.jar:lib/jetty-security-9.3.19.v20170502.jar:lib/asm-commons-5.2.jar:lib/jetty-http-9.3.19.v20170502.jar:lib/guava-16.0.1.jar:lib/netty-resolver-dns-2.0.37.jar:lib/jsr305-2.0.1.jar:lib/geoip2-0.4.0.jar:lib/reactive-streams-1.0.0.jar:lib/plexus-interpolation-1.19.jar:lib/netty-resolver-2.0.37.jar:lib/commons-dbcp-1.4.jar:lib/jetty-client-9.3.19.v20170502.jar:lib/netty-buffer-4.0.52.Final.jar:lib/jersey-servlet-1.19.3.jar:lib/commons-io-2.5.jar:lib/netty-handler-4.0.52.Final.jar:lib/jets3t-0.9.4.jar:lib/jackson-jaxrs-json-provider-2.4.6.jar:lib/lz4-1.3.0.jar:lib/netty-codec-dns-2.0.37.jar:lib/druid-sql-0.11.0.jar:lib/maven-repository-metadata-3.1.1.jar:lib/jersey-core-1.19.3.jar:lib/curator-recipes-4.0.0.jar:lib/jackson-datatype-guava-2.4.6.jar:lib/joni-2.1.11.jar:lib/joda-time-2.9.9.jar:lib/jackson-dataformat-cbor-2.5.3.jar:lib/extendedset-0.11.0.jar:lib/jackson-annotations-2.4.6.jar:lib/druid-hll-0.11.0.jar:lib/aether-connector-file-0.9.0.M2.jar:lib/curator-client-4.0.0.jar:lib/okhttp-1.0.2.jar:lib/commons-codec-1.7.jar:lib/config-magic-0.9.jar:lib/maven-settings-3.1.1.jar:lib/java-util-1.3.2.jar:lib/java-xmlbuilder-1.1.jar:lib/druid-services-0.11.0.jar:lib/jackson-datatype-joda-2.4.6.jar:lib/slf4j-api-1.6.4.jar:lib/commons-pool2-2.2.jar:lib/guice-4.1.0.jar:lib/jackson-dataformat-smile-2.4.6.jar:lib/json-path-2.1.0.jar:lib/netty-reactive-streams-1.0.8.jar:lib/aopalliance-1.0.jar:lib/avatica-server-1.9.0.jar:lib/janino-2.7.6.jar:lib/netty-transport-4.0.52.Final.jar:lib/airline-0.7.jar:lib/jcl-over-slf4j-1.7.12.jar:lib/log4j-core-2.5.jar:lib/avatica-metrics-1.9.0.jar:lib/druid-indexing-service-0.11.0.jar:lib/jackson-core-asl-1.9.13.jar:lib/maven-model-builder-3.1.1.jar:lib/opencsv-2.3.jar:lib/jetty-servlet-9.3.19.v20170502.jar:lib/netty-transport-native-epoll-4.0.52.Final-linux-x86_64.jar:lib/netty-codec-http-4.0.52.Final.jar:lib/maven-settings-builder-3.1.1.jar:lib/jetty-servlets-9.3.19.v20170502.jar:lib/maven-aether-provider-3.1.1.jar:lib/druid-aws-common-0.11.0.jar:lib/commons-logging-1.1.1.jar:lib/jcodings-1.0.13.jar:lib/disruptor-3.3.6.jar:lib/derbyclient-10.11.1.1.jar:lib/async-http-client-2.0.37.jar:lib/hibernate-validator-5.1.3.Final.jar:lib/compress-lzf-1.0.3.jar:lib/derby-10.11.1.1.jar:lib/icu4j-54.1.1.jar:lib/plexus-utils-3.0.15.jar:lib/jsr311-api-1.1.1.jar:lib/aggdesigner-algorithm-6.0.jar:lib/log4j-api-2.5.jar:lib/tesla-aether-0.0.5.jar:lib/netty-common-4.0.52.Final.jar:lib/aether-util-0.9.0.M2.jar:lib/druid-indexing-hadoop-0.11.0.jar:lib/aether-connector-okhttp-0.0.9.jar:lib/jackson-jaxrs-smile-provider-2.4.6.jar:lib/wagon-provider-api-2.4.jar:lib/aws-java-sdk-ec2-1.10.77.jar:lib/druid-console-0.0.2.jar:lib/jetty-server-9.3.19.v20170502.jar:lib/commons-compiler-2.7.6.jar:lib/druid-processing-0.11.0.jar:lib/jetty-util-9.3.19.v20170502.jar:lib/jetty-continuation-9.3.19.v20170502.jar:lib/validation-api-1.1.0.Final.jar:lib/jackson-mapper-asl-1.9.13.jar:lib/commons-pool-1.6.jar:lib/maven-model-3.1.1.jar:lib/bytebuffer-collections-0.11.0.jar:lib/commons-lang-2.6.jar:lib/javax.el-3.0.0.jar:lib/netty-all-4.0.52.Final.jar:lib/log4j-1.2-api-2.5.jar:lib/asm-tree-5.2.jar:lib/protobuf-java-3.1.0.jar:lib/javax.el-api-3.0.0.jar:lib/jetty-io-9.3.19.v20170502.jar:lib/calcite-linq4j-1.12.0.jar:lib/rhino-1.7R5.jar:lib/jackson-jq-0.0.7.jar:lib/log4j-jul-2.5.jar:lib/bcprov-jdk15on-1.52.jar:lib/aws-java-sdk-core-1.10.77.jar:lib/zookeeper-3.4.10.jar:lib/druid-api-0.11.0.jar:lib/classmate-1.0.0.jar:lib/netty-3.10.6.Final.jar:lib/druid-common-0.11.0.jar:lib/calcite-core-1.12.0.jar:lib/jetty-proxy-9.3.19.v20170502.jar:lib/curator-framework-4.0.0.jar:lib/antlr4-runtime-4.5.1.jar:lib/guice-multibindings-4.1.0.jar:lib/jvm-attach-api-1.2.jar:lib/commons-cli-1.2.jar:lib/mapdb-1.0.8.jar:lib/jackson-jaxrs-base-2.4.6.jar:lib/fastutil-7.2.0.jar:lib/javax.servlet-api-3.1.0.jar:lib/derbynet-10.11.1.1.jar:lib/asm-5.2.jar:lib/jdbi-2.63.1.jar:lib/activation-1.1.1.jar:lib/java-util-0.11.0.jar:lib/guice-servlet-4.1.0.jar:lib/jboss-logging-3.1.3.GA.jar:lib/irc-api-1.0-0014.jar:lib/log4j-slf4j-impl-2.5.jar:lib/maxminddb-0.2.0.jar:lib/netty-codec-4.0.52.Final.jar:lib/RoaringBitmap-0.5.18.jar:lib/httpclient-4.5.1.jar
+2018-07-26T21:25:45,161 INFO [main] io.druid.cli.CliPeon - * java.class.version: 52.0
+2018-07-26T21:25:45,161 INFO [main] io.druid.cli.CliPeon - * java.endorsed.dirs: /home/y/libexec64/jdk64-1.8.0/jre/lib/endorsed
+2018-07-26T21:25:45,161 INFO [main] io.druid.cli.CliPeon - * java.ext.dirs: /home/y/libexec64/jdk64-1.8.0/jre/lib/ext:/usr/java/packages/lib/ext
+2018-07-26T21:25:45,161 INFO [main] io.druid.cli.CliPeon - * java.home: /home/y/libexec64/jdk64-1.8.0/jre
+2018-07-26T21:25:45,161 INFO [main] io.druid.cli.CliPeon - * java.io.tmpdir: var/tmp
+2018-07-26T21:25:45,161 INFO [main] io.druid.cli.CliPeon - * java.library.path: /home/y/lib64
+2018-07-26T21:25:45,162 INFO [main] io.druid.cli.CliPeon - * java.runtime.name: Java(TM) SE Runtime Environment
+2018-07-26T21:25:45,162 INFO [main] io.druid.cli.CliPeon - * java.runtime.version: 1.8.0_131-b11
+2018-07-26T21:25:45,162 INFO [main] io.druid.cli.CliPeon - * java.specification.name: Java Platform API Specification
+2018-07-26T21:25:45,163 INFO [main] io.druid.cli.CliPeon - * java.specification.vendor: Oracle Corporation
+2018-07-26T21:25:45,164 INFO [main] io.druid.cli.CliPeon - * java.specification.version: 1.8
+2018-07-26T21:25:45,164 INFO [main] io.druid.cli.CliPeon - * java.util.logging.manager: org.apache.logging.log4j.jul.LogManager
+2018-07-26T21:25:45,164 INFO [main] io.druid.cli.CliPeon - * java.vendor: Oracle Corporation
+2018-07-26T21:25:45,164 INFO [main] io.druid.cli.CliPeon - * java.vendor.url: http://java.oracle.com/
+2018-07-26T21:25:45,164 INFO [main] io.druid.cli.CliPeon - * java.vendor.url.bug: http://bugreport.sun.com/bugreport/
+2018-07-26T21:25:45,164 INFO [main] io.druid.cli.CliPeon - * java.version: 1.8.0_131
+2018-07-26T21:25:45,164 INFO [main] io.druid.cli.CliPeon - * java.vm.info: mixed mode
+2018-07-26T21:25:45,165 INFO [main] io.druid.cli.CliPeon - * java.vm.name: Java HotSpot(TM) 64-Bit Server VM
+2018-07-26T21:25:45,165 INFO [main] io.druid.cli.CliPeon - * java.vm.specification.name: Java Virtual Machine Specification
+2018-07-26T21:25:45,165 INFO [main] io.druid.cli.CliPeon - * java.vm.specification.vendor: Oracle Corporation
+2018-07-26T21:25:45,165 INFO [main] io.druid.cli.CliPeon - * java.vm.specification.version: 1.8
+2018-07-26T21:25:45,165 INFO [main] io.druid.cli.CliPeon - * java.vm.vendor: Oracle Corporation
+2018-07-26T21:25:45,165 INFO [main] io.druid.cli.CliPeon - * java.vm.version: 25.131-b11
+2018-07-26T21:25:45,165 INFO [main] io.druid.cli.CliPeon - * line.separator: 
+
+2018-07-26T21:25:45,166 INFO [main] io.druid.cli.CliPeon - * log4j.shutdownCallbackRegistry: io.druid.common.config.Log4jShutdown
+2018-07-26T21:25:45,166 INFO [main] io.druid.cli.CliPeon - * log4j.shutdownHookEnabled: true
+2018-07-26T21:25:45,166 INFO [main] io.druid.cli.CliPeon - * os.arch: amd64
+2018-07-26T21:25:45,166 INFO [main] io.druid.cli.CliPeon - * os.name: Linux
+2018-07-26T21:25:45,167 INFO [main] io.druid.cli.CliPeon - * os.version: 2.6.32-696.6.3.el6.YAHOO.20170712.4.x86_64
+2018-07-26T21:25:45,167 INFO [main] io.druid.cli.CliPeon - * path.separator: :
+2018-07-26T21:25:45,167 INFO [main] io.druid.cli.CliPeon - * sun.arch.data.model: 64
+2018-07-26T21:25:45,168 INFO [main] io.druid.cli.CliPeon - * sun.boot.class.path: /home/y/libexec64/jdk64-1.8.0/jre/lib/resources.jar:/home/y/libexec64/jdk64-1.8.0/jre/lib/rt.jar:/home/y/libexec64/jdk64-1.8.0/jre/lib/sunrsasign.jar:/home/y/libexec64/jdk64-1.8.0/jre/lib/jsse.jar:/home/y/libexec64/jdk64-1.8.0/jre/lib/jce.jar:/home/y/libexec64/jdk64-1.8.0/jre/lib/charsets.jar:/home/y/libexec64/jdk64-1.8.0/jre/lib/jfr.jar:/home/y/libexec64/jdk64-1.8.0/jre/classes
+2018-07-26T21:25:45,168 INFO [main] io.druid.cli.CliPeon - * sun.boot.library.path: /home/y/libexec64/jdk64-1.8.0/jre/lib/amd64
+2018-07-26T21:25:45,168 INFO [main] io.druid.cli.CliPeon - * sun.cpu.endian: little
+2018-07-26T21:25:45,168 INFO [main] io.druid.cli.CliPeon - * sun.cpu.isalist: 
+2018-07-26T21:25:45,168 INFO [main] io.druid.cli.CliPeon - * sun.io.unicode.encoding: UnicodeLittle
+2018-07-26T21:25:45,168 INFO [main] io.druid.cli.CliPeon - * sun.java.command: io.druid.cli.Main internal peon var/druid/task/index_hadoop_air_2018-07-26T21:25:39.278Z/task.json var/druid/task/index_hadoop_air_2018-07-26T21:25:39.278Z/c704693d-8835-47cc-80c4-fde4815faaed/status.json
+2018-07-26T21:25:45,168 INFO [main] io.druid.cli.CliPeon - * sun.java.launcher: SUN_STANDARD
+2018-07-26T21:25:45,169 INFO [main] io.druid.cli.CliPeon - * sun.jnu.encoding: UTF-8
+2018-07-26T21:25:45,169 INFO [main] io.druid.cli.CliPeon - * sun.management.compiler: HotSpot 64-Bit Tiered Compilers
+2018-07-26T21:25:45,169 INFO [main] io.druid.cli.CliPeon - * sun.os.patch.level: unknown
+2018-07-26T21:25:45,169 INFO [main] io.druid.cli.CliPeon - * user.country: US
+2018-07-26T21:25:45,169 INFO [main] io.druid.cli.CliPeon - * user.dir: /home/ylin08/druid-0.11.0
+2018-07-26T21:25:45,169 INFO [main] io.druid.cli.CliPeon - * user.home: /home/ylin08
+2018-07-26T21:25:45,169 INFO [main] io.druid.cli.CliPeon - * user.language: en
+2018-07-26T21:25:45,169 INFO [main] io.druid.cli.CliPeon - * user.name: ylin08
+2018-07-26T21:25:45,170 INFO [main] io.druid.cli.CliPeon - * user.timezone: UTC
+2018-07-26T21:25:45,190 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.indexing.common.config.TaskConfig] from props[druid.indexer.task.] as [io.druid.indexing.common.config.TaskConfig@f324455]
+2018-07-26T21:25:45,193 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.client.indexing.IndexingServiceSelectorConfig] from props[druid.selectors.indexing.] as [io.druid.client.indexing.IndexingServiceSelectorConfig@1a0d96a5]
+2018-07-26T21:25:45,198 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.indexing.common.RetryPolicyConfig] from props[druid.peon.taskActionClient.retry.] as [io.druid.indexing.common.RetryPolicyConfig@45cd7bc5]
+2018-07-26T21:25:45,203 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.segment.loading.LocalDataSegmentPusherConfig] from props[druid.storage.] as [io.druid.segment.loading.LocalDataSegmentPusherConfig@7e72a6cc]
+2018-07-26T21:25:45,205 INFO [main] io.druid.segment.loading.LocalDataSegmentPusher - Configured local filesystem as deep storage
+2018-07-26T21:25:45,211 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.client.DruidServerConfig] from props[druid.server.] as [io.druid.client.DruidServerConfig@5961e92d]
+2018-07-26T21:25:45,215 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.server.initialization.BatchDataSegmentAnnouncerConfig] from props[druid.announcer.] as [io.druid.server.initialization.BatchDataSegmentAnnouncerConfig@29fd8e67]
+2018-07-26T21:25:45,223 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[interface io.druid.server.coordination.DataSegmentAnnouncerProvider] from props[druid.announcer.] as [io.druid.server.coordination.BatchDataSegmentAnnouncerProvider@19a31b9d]
+2018-07-26T21:25:45,228 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.segment.realtime.plumber.CoordinatorBasedSegmentHandoffNotifierConfig] from props[druid.segment.handoff.] as [io.druid.segment.realtime.plumber.CoordinatorBasedSegmentHandoffNotifierConfig@31e2232f]
+2018-07-26T21:25:45,233 INFO [main] org.skife.config.ConfigurationObjectFactory - Assigning value [256000000] for [druid.processing.buffer.sizeBytes] on [io.druid.query.DruidProcessingConfig#intermediateComputeSizeBytes()]
+2018-07-26T21:25:45,236 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [druid.computation.buffer.poolCacheMaxCount, ${base_path}.buffer.poolCacheMaxCount] on [io.druid.query.DruidProcessingConfig#poolCacheMaxCount()]
+2018-07-26T21:25:45,237 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.numMergeBuffers] on [io.druid.query.DruidProcessingConfig#getNumMergeBuffersConfigured()]
+2018-07-26T21:25:45,238 INFO [main] org.skife.config.ConfigurationObjectFactory - Assigning value [2] for [druid.processing.numThreads] on [io.druid.query.DruidProcessingConfig#getNumThreadsConfigured()]
+2018-07-26T21:25:45,238 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.tmpDir] on [io.druid.query.DruidProcessingConfig#getTmpDir()]
+2018-07-26T21:25:45,238 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.fifo] on [io.druid.query.DruidProcessingConfig#isFifo()]
+2018-07-26T21:25:45,239 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.columnCache.sizeBytes] on [io.druid.query.DruidProcessingConfig#columnCacheSizeBytes()]
+2018-07-26T21:25:45,239 INFO [main] org.skife.config.ConfigurationObjectFactory - Assigning default value [processing-%s] for [${base_path}.formatString] on [io.druid.java.util.common.concurrent.ExecutorServiceConfig#getFormatString()]
+2018-07-26T21:25:45,364 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[interface io.druid.client.cache.CacheProvider] from props[druid.cache.] as [io.druid.client.cache.LocalCacheProvider@7219ac49]
+2018-07-26T21:25:45,383 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.client.cache.CacheConfig] from props[druid.realtime.cache.] as [io.druid.client.cache.CacheConfig@3c8a7e38]
+2018-07-26T21:25:45,399 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.server.initialization.ServerConfig] from props[druid.server.http.] as [ServerConfig{numThreads=9, maxIdleTime=PT5M, defaultQueryTimeout=300000, maxScatterGatherBytes=9223372036854775807}]
+2018-07-26T21:25:45,407 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.server.initialization.TLSServerConfig] from props[druid.server.https.] as [TLSServerConfig{keyStorePath='null', keyStoreType='null', certAlias='null', keyManagerFactoryAlgorithm='null', includeCipherSuites=null, excludeCipherSuites=null, includeProtocols=null, excludeProtocols=null}]
+2018-07-26T21:25:45,426 INFO [main] org.eclipse.jetty.util.log - Logging initialized @5332ms
+2018-07-26T21:25:45,443 INFO [main] io.druid.server.initialization.jetty.JettyServerModule - Creating http connector with port [8100]
+2018-07-26T21:25:45,895 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.query.search.SearchQueryConfig] from props[druid.query.search.] as [io.druid.query.search.SearchQueryConfig@124dac75]
+2018-07-26T21:25:45,911 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.query.metadata.SegmentMetadataQueryConfig] from props[druid.query.segmentMetadata.] as [io.druid.query.metadata.SegmentMetadataQueryConfig@6088451e]
+2018-07-26T21:25:45,919 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.query.groupby.GroupByQueryConfig] from props[druid.query.groupBy.] as [GroupByQueryConfig{defaultStrategy='v2', singleThreaded=false, maxIntermediateRows=50000, maxResults=500000, bufferGrouperMaxSize=2147483647, bufferGrouperMaxLoadFactor=0.0, bufferGrouperInitialBuckets=0, maxMergingDictionarySize=100000000, maxOnDiskStorage=0, forcePushDownLimit=false, forceHashAggregation=false}]
+2018-07-26T21:25:45,943 INFO [main] io.druid.offheap.OffheapBufferGenerator - Allocating new intermediate processing buffer[0] of size[256,000,000]
+2018-07-26T21:25:46,198 INFO [main] io.druid.offheap.OffheapBufferGenerator - Allocating new intermediate processing buffer[1] of size[256,000,000]
+2018-07-26T21:25:46,460 INFO [main] io.druid.offheap.OffheapBufferGenerator - Allocating new result merging buffer[0] of size[256,000,000]
+2018-07-26T21:25:46,720 INFO [main] io.druid.offheap.OffheapBufferGenerator - Allocating new result merging buffer[1] of size[256,000,000]
+2018-07-26T21:25:46,992 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.query.scan.ScanQueryConfig] from props[druid.query.scan.] as [ScanQueryConfig{legacy=false}]
+2018-07-26T21:25:46,996 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.query.select.SelectQueryConfig] from props[druid.query.select.] as [io.druid.query.select.SelectQueryConfig@4dde8976]
+2018-07-26T21:25:46,999 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.query.topn.TopNQueryConfig] from props[druid.query.topN.] as [io.druid.query.topn.TopNQueryConfig@6dd36ab6]
+2018-07-26T21:25:47,003 INFO [main] io.druid.guice.JsonConfigurator - Loaded class[interface io.druid.server.log.RequestLoggerProvider] from props[druid.request.logging.] as [io.druid.server.log.NoopRequestLoggerProvider@36ab3814]
+2018-07-26T21:25:47,015 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking start method[public void com.metamx.emitter.core.LoggingEmitter.start()] on object[LoggingEmitter{log=com.metamx.common.logger.Logger@476e8796, level=INFO}].
+2018-07-26T21:25:47,017 INFO [main] com.metamx.emitter.core.LoggingEmitter - Start: started [true]
+2018-07-26T21:25:47,018 INFO [main] io.druid.curator.CuratorModule - Starting Curator
+2018-07-26T21:25:47,018 INFO [main] org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+2018-07-26T21:25:47,033 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT
+2018-07-26T21:25:47,033 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:host.name=attemptcontempt.corp.ne1.yahoo.com
+2018-07-26T21:25:47,033 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_131
+2018-07-26T21:25:47,033 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2018-07-26T21:25:47,034 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:java.home=/home/y/libexec64/jdk64-1.8.0/jre
+2018-07-26T21:25:47,034 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=conf-quickstart/druid/_common:conf-quickstart/druid/middleManager:lib/commons-math3-3.6.1.jar:lib/async-http-client-netty-utils-2.0.37.jar:lib/jackson-databind-2.4.6.jar:lib/aether-spi-0.9.0.M2.jar:lib/aether-api-0.9.0.M2.jar:lib/jackson-module-jaxb-annotations-2.4.6.jar:lib/jline-0.9.94.jar:lib/httpcore-4.4.3.jar:lib/avatica-core-1.9.0.jar:lib/jackson-core-2.4.6.jar:lib/curator-x-discovery-4.0.0.jar:lib/druid-server-0.11.0.jar:lib/aether-impl-0.9.0.M2.jar:lib/commons-lang3-3.2.jar:lib/base64-2.3.8.jar:lib/jersey-guice-1.19.3.jar:lib/commons-dbcp2-2.0.1.jar:lib/jersey-server-1.19.3.jar:lib/spymemcached-2.12.3.jar:lib/javax.inject-1.jar:lib/jetty-security-9.3.19.v20170502.jar:lib/asm-commons-5.2.jar:lib/jetty-http-9.3.19.v20170502.jar:lib/guava-16.0.1.jar:lib/netty-resolver-dns-2.0.37.jar:lib/jsr305-2.0.1.jar:lib/geoip2-0.4.0.jar:lib/reactive-streams-1.0.0.jar:lib/plexus-interpolation-1.19.jar:lib/netty-resolver-2.0.37.jar:lib/commons-dbcp-1.4.jar:lib/jetty-client-9.3.19.v20170502.jar:lib/netty-buffer-4.0.52.Final.jar:lib/jersey-servlet-1.19.3.jar:lib/commons-io-2.5.jar:lib/netty-handler-4.0.52.Final.jar:lib/jets3t-0.9.4.jar:lib/jackson-jaxrs-json-provider-2.4.6.jar:lib/lz4-1.3.0.jar:lib/netty-codec-dns-2.0.37.jar:lib/druid-sql-0.11.0.jar:lib/maven-repository-metadata-3.1.1.jar:lib/jersey-core-1.19.3.jar:lib/curator-recipes-4.0.0.jar:lib/jackson-datatype-guava-2.4.6.jar:lib/joni-2.1.11.jar:lib/joda-time-2.9.9.jar:lib/jackson-dataformat-cbor-2.5.3.jar:lib/extendedset-0.11.0.jar:lib/jackson-annotations-2.4.6.jar:lib/druid-hll-0.11.0.jar:lib/aether-connector-file-0.9.0.M2.jar:lib/curator-client-4.0.0.jar:lib/okhttp-1.0.2.jar:lib/commons-codec-1.7.jar:lib/config-magic-0.9.jar:lib/maven-settings-3.1.1.jar:lib/java-util-1.3.2.jar:lib/java-xmlbuilder-1.1.jar:lib/druid-services-0.11.0.jar:lib/jackson-datatype-joda-2.4.6.jar:lib/slf4j-api-1.6.4.jar:lib/commons-pool2-2.2.jar:lib/guice-4.1.0.jar:lib/jackson-dataformat-smile-2.4.6.jar:lib/json-path-2.1.0.jar:lib/netty-reactive-streams-1.0.8.jar:lib/aopalliance-1.0.jar:lib/avatica-server-1.9.0.jar:lib/janino-2.7.6.jar:lib/netty-transport-4.0.52.Final.jar:lib/airline-0.7.jar:lib/jcl-over-slf4j-1.7.12.jar:lib/log4j-core-2.5.jar:lib/avatica-metrics-1.9.0.jar:lib/druid-indexing-service-0.11.0.jar:lib/jackson-core-asl-1.9.13.jar:lib/maven-model-builder-3.1.1.jar:lib/opencsv-2.3.jar:lib/jetty-servlet-9.3.19.v20170502.jar:lib/netty-transport-native-epoll-4.0.52.Final-linux-x86_64.jar:lib/netty-codec-http-4.0.52.Final.jar:lib/maven-settings-builder-3.1.1.jar:lib/jetty-servlets-9.3.19.v20170502.jar:lib/maven-aether-provider-3.1.1.jar:lib/druid-aws-common-0.11.0.jar:lib/commons-logging-1.1.1.jar:lib/jcodings-1.0.13.jar:lib/disruptor-3.3.6.jar:lib/derbyclient-10.11.1.1.jar:lib/async-http-client-2.0.37.jar:lib/hibernate-validator-5.1.3.Final.jar:lib/compress-lzf-1.0.3.jar:lib/derby-10.11.1.1.jar:lib/icu4j-54.1.1.jar:lib/plexus-utils-3.0.15.jar:lib/jsr311-api-1.1.1.jar:lib/aggdesigner-algorithm-6.0.jar:lib/log4j-api-2.5.jar:lib/tesla-aether-0.0.5.jar:lib/netty-common-4.0.52.Final.jar:lib/aether-util-0.9.0.M2.jar:lib/druid-indexing-hadoop-0.11.0.jar:lib/aether-connector-okhttp-0.0.9.jar:lib/jackson-jaxrs-smile-provider-2.4.6.jar:lib/wagon-provider-api-2.4.jar:lib/aws-java-sdk-ec2-1.10.77.jar:lib/druid-console-0.0.2.jar:lib/jetty-server-9.3.19.v20170502.jar:lib/commons-compiler-2.7.6.jar:lib/druid-processing-0.11.0.jar:lib/jetty-util-9.3.19.v20170502.jar:lib/jetty-continuation-9.3.19.v20170502.jar:lib/validation-api-1.1.0.Final.jar:lib/jackson-mapper-asl-1.9.13.jar:lib/commons-pool-1.6.jar:lib/maven-model-3.1.1.jar:lib/bytebuffer-collections-0.11.0.jar:lib/commons-lang-2.6.jar:lib/javax.el-3.0.0.jar:lib/netty-all-4.0.52.Final.jar:lib/log4j-1.2-api-2.5.jar:lib/asm-tree-5.2.jar:lib/protobuf-java-3.1.0.jar:lib/javax.el-api-3.0.0.jar:lib/jetty-io-9.3.19.v20170502.jar:lib/calcite-linq4j-1.12.0.jar:lib/rhino-1.7R5.jar:lib/jackson-jq-0.0.7.jar:lib/log4j-jul-2.5.jar:lib/bcprov-jdk15on-1.52.jar:lib/aws-java-sdk-core-1.10.77.jar:lib/zookeeper-3.4.10.jar:lib/druid-api-0.11.0.jar:lib/classmate-1.0.0.jar:lib/netty-3.10.6.Final.jar:lib/druid-common-0.11.0.jar:lib/calcite-core-1.12.0.jar:lib/jetty-proxy-9.3.19.v20170502.jar:lib/curator-framework-4.0.0.jar:lib/antlr4-runtime-4.5.1.jar:lib/guice-multibindings-4.1.0.jar:lib/jvm-attach-api-1.2.jar:lib/commons-cli-1.2.jar:lib/mapdb-1.0.8.jar:lib/jackson-jaxrs-base-2.4.6.jar:lib/fastutil-7.2.0.jar:lib/javax.servlet-api-3.1.0.jar:lib/derbynet-10.11.1.1.jar:lib/asm-5.2.jar:lib/jdbi-2.63.1.jar:lib/activation-1.1.1.jar:lib/java-util-0.11.0.jar:lib/guice-servlet-4.1.0.jar:lib/jboss-logging-3.1.3.GA.jar:lib/irc-api-1.0-0014.jar:lib/log4j-slf4j-impl-2.5.jar:lib/maxminddb-0.2.0.jar:lib/netty-codec-4.0.52.Final.jar:lib/RoaringBitmap-0.5.18.jar:lib/httpclient-4.5.1.jar
+2018-07-26T21:25:47,034 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/home/y/lib64
+2018-07-26T21:25:47,034 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=var/tmp
+2018-07-26T21:25:47,034 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2018-07-26T21:25:47,034 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:os.name=Linux
+2018-07-26T21:25:47,035 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:os.arch=amd64
+2018-07-26T21:25:47,035 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:os.version=2.6.32-696.6.3.el6.YAHOO.20170712.4.x86_64
+2018-07-26T21:25:47,035 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:user.name=ylin08
+2018-07-26T21:25:47,035 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:user.home=/home/ylin08
+2018-07-26T21:25:47,035 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/home/ylin08/druid-0.11.0
+2018-07-26T21:25:47,037 INFO [main] org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost sessionTimeout=30000 watcher=org.apache.curator.ConnectionState@1cd43562
+2018-07-26T21:25:47,060 INFO [main-SendThread(localhost.localdomain:2181)] org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost.localdomain/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-07-26T21:25:47,062 INFO [main] org.apache.curator.framework.imps.CuratorFrameworkImpl - Default schema
+2018-07-26T21:25:47,062 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking start method[public void io.druid.initialization.Log4jShutterDownerModule$Log4jShutterDowner.start()] on object[io.druid.initialization.Log4jShutterDownerModule$Log4jShutterDowner@3fa21d49].
+2018-07-26T21:25:47,063 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking start method[public void com.metamx.emitter.service.ServiceEmitter.start()] on object[ServiceEmitter{serviceDimensions={service=druid/middleManager, host=attemptcontempt.corp.ne1.yahoo.com:8100, version=0.11.0}, emitter=LoggingEmitter{log=com.metamx.common.logger.Logger@476e8796, level=INFO}}].
+2018-07-26T21:25:47,065 INFO [main] com.metamx.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking start method[public void com.metamx.http.client.NettyHttpClient.start()] on object[com.metamx.http.client.NettyHttpClient@5261ec9].
+2018-07-26T21:25:47,066 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking start method[public void io.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider.start()] on object[io.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider@65bb6275].
+2018-07-26T21:25:47,066 INFO [main] io.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider - starting
+2018-07-26T21:25:47,066 INFO [main] io.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider - started
+2018-07-26T21:25:47,067 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking start method[public void io.druid.curator.discovery.ServerDiscoverySelector.start() throws java.lang.Exception] on object[io.druid.curator.discovery.ServerDiscoverySelector@47c7a9e5].
+2018-07-26T21:25:47,079 INFO [main-SendThread(localhost.localdomain:2181)] org.apache.zookeeper.ClientCnxn - Socket connection established to localhost.localdomain/127.0.0.1:2181, initiating session
+2018-07-26T21:25:47,092 INFO [main-SendThread(localhost.localdomain:2181)] org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost.localdomain/127.0.0.1:2181, sessionid = 0x163d1e196310157, negotiated timeout = 30000
+2018-07-26T21:25:47,100 INFO [main-EventThread] org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+2018-07-26T21:25:47,260 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking start method[public void io.druid.discovery.DruidLeaderClient.start()] on object[io.druid.discovery.DruidLeaderClient@4733f6f5].
+2018-07-26T21:25:47,263 INFO [main] io.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider - Creating NodeTypeWatcher for nodeType [coordinator].
+2018-07-26T21:25:47,266 INFO [main] io.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider - Created NodeTypeWatcher for nodeType [coordinator].
+2018-07-26T21:25:47,267 INFO [main] io.druid.discovery.DruidLeaderClient - Started.
+2018-07-26T21:25:47,267 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking start method[public void io.druid.query.lookup.LookupReferencesManager.start()] on object[io.druid.query.lookup.LookupReferencesManager@415ef4d8].
+2018-07-26T21:25:47,267 INFO [main] io.druid.query.lookup.LookupReferencesManager - LookupReferencesManager is starting.
+2018-07-26T21:25:47,300 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8081
+2018-07-26T21:25:47,301 INFO [NodeTypeWatcher[coordinator]] io.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider$NodeTypeWatcher - Received event [CHILD_ADDED] for Node[coordinator:DiscoveryDruidNode{druidNode=DruidNode{serviceName='druid/coordinator', host='attemptcontempt.corp.ne1.yahoo.com', port=-1, plaintextPort=8081, enablePlaintextPort=true, tlsPort=-1, enableTlsPort=false}, nodeType='coordinator', services={}}].
+2018-07-26T21:25:47,301 INFO [NodeTypeWatcher[coordinator]] io.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider$NodeTypeWatcher - Received INITIALIZED in node watcher for type [coordinator].
+2018-07-26T21:25:47,355 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8081
+2018-07-26T21:25:47,357 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8081
+2018-07-26T21:25:47,357 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8081
+2018-07-26T21:25:47,361 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8081
+2018-07-26T21:25:47,363 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8081
+2018-07-26T21:25:47,365 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8081
+2018-07-26T21:25:47,368 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8081
+2018-07-26T21:25:47,369 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8081
+2018-07-26T21:25:47,372 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8081
+2018-07-26T21:25:47,373 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8081
+2018-07-26T21:25:47,374 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8081
+2018-07-26T21:25:47,376 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8081
+2018-07-26T21:25:47,380 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8081
+2018-07-26T21:25:47,381 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8081
+2018-07-26T21:25:47,381 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8081
+2018-07-26T21:25:47,381 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8081
+2018-07-26T21:25:47,382 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8081
+2018-07-26T21:25:47,382 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8081
+2018-07-26T21:25:47,383 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8081
+2018-07-26T21:25:47,430 WARN [main] io.druid.query.lookup.LookupReferencesManager - No lookups found for tier [__default], response [com.metamx.http.client.response.FullResponseHolder@4215e133]
+2018-07-26T21:25:47,430 INFO [main] io.druid.query.lookup.LookupReferencesManager - Coordinator is unavailable. Loading saved snapshot instead
+2018-07-26T21:25:47,430 INFO [main] io.druid.query.lookup.LookupReferencesManager - No lookups to be loaded at this point
+2018-07-26T21:25:47,432 INFO [main] io.druid.query.lookup.LookupReferencesManager - LookupReferencesManager is started.
+2018-07-26T21:25:47,434 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking start method[public void com.metamx.metrics.MonitorScheduler.start()] on object[com.metamx.metrics.MonitorScheduler@48eaf42f].
+2018-07-26T21:25:47,437 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking start method[public void io.druid.curator.discovery.ServerDiscoverySelector.start() throws java.lang.Exception] on object[io.druid.curator.discovery.ServerDiscoverySelector@7ea2412c].
+2018-07-26T21:25:47,443 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking start method[public void io.druid.discovery.DruidLeaderClient.start()] on object[io.druid.discovery.DruidLeaderClient@474179fa].
+2018-07-26T21:25:47,443 INFO [main] io.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider - Creating NodeTypeWatcher for nodeType [overlord].
+2018-07-26T21:25:47,444 INFO [main] io.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider - Created NodeTypeWatcher for nodeType [overlord].
+2018-07-26T21:25:47,444 INFO [main] io.druid.discovery.DruidLeaderClient - Started.
+2018-07-26T21:25:47,449 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking start method[public void io.druid.curator.announcement.Announcer.start()] on object[io.druid.curator.announcement.Announcer@ca8ef3a].
+2018-07-26T21:25:47,451 INFO [NodeTypeWatcher[overlord]] io.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider$NodeTypeWatcher - Received event [CHILD_ADDED] for Node[overlord:DiscoveryDruidNode{druidNode=DruidNode{serviceName='druid/overlord', host='attemptcontempt.corp.ne1.yahoo.com', port=-1, plaintextPort=8090, enablePlaintextPort=true, tlsPort=-1, enableTlsPort=false}, nodeType='overlord', services={}}].
+2018-07-26T21:25:47,451 INFO [NodeTypeWatcher[overlord]] io.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider$NodeTypeWatcher - Received INITIALIZED in node watcher for type [overlord].
+2018-07-26T21:25:47,457 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking start method[public void io.druid.indexing.worker.executor.ExecutorLifecycle.start() throws java.lang.InterruptedException] on object[io.druid.indexing.worker.executor.ExecutorLifecycle@3443e476].
+2018-07-26T21:25:47,521 INFO [main] io.druid.indexing.worker.executor.ExecutorLifecycle - Running with task: {
+  "type" : "index_hadoop",
+  "id" : "index_hadoop_air_2018-07-26T21:25:39.278Z",
+  "spec" : {
+    "dataSchema" : {
+      "dataSource" : "air",
+      "parser" : {
+        "type" : "hadoopyString",
+        "parseSpec" : {
+          "format" : "json",
+          "dimensionsSpec" : {
+            "dimensions" : [ "PT08.S4(NO2)", "CO(GT)", "T", "PT08.S3(NOx)", "AH", "NOx(GT)", "C6H6(GT)", "PT08.S2(NMHC)", "NMHC(GT)", "PT08.S1(CO)", "NO2(GT)", "PT08.S5(O3)", "RH" ]
+          },
+          "timestampSpec" : {
+            "format" : "auto",
+            "column" : "Time"
+          }
+        }
+      },
+      "metricsSpec" : [ {
+        "type" : "count",
+        "name" : "count"
+      }, {
+        "type" : "longSum",
+        "name" : "CO(GT)",
+        "fieldName" : "CO(GT)",
+        "expression" : null
+      }, {
+        "type" : "longSum",
+        "name" : "T",
+        "fieldName" : "T",
+        "expression" : null
+      }, {
+        "type" : "longSum",
+        "name" : "PT08.S4(NO2)",
+        "fieldName" : "PT08.S4(NO2)",
+        "expression" : null
+      } ],
+      "granularitySpec" : {
+        "type" : "uniform",
+        "segmentGranularity" : "DAY",
+        "queryGranularity" : {
+          "type" : "none"
+        },
+        "rollup" : true,
+        "intervals" : [ "2004-03-10T00:00:00.000Z/2005-04-04T00:00:00.000Z" ]
+      }
+    },
+    "ioConfig" : {
+      "type" : "hadoop",
+      "inputSpec" : {
+        "type" : "static",
+        "paths" : "quickstart/airQuality.json"
+      },
+      "metadataUpdateSpec" : null,
+      "segmentOutputPath" : null
+    },
+    "tuningConfig" : {
+      "type" : "hadoop",
+      "workingPath" : null,
+      "version" : "2018-07-26T21:25:39.243Z",
+      "partitionsSpec" : {
+        "type" : "hashed",
+        "targetPartitionSize" : 5000000,
+        "maxPartitionSize" : 7500000,
+        "assumeGrouped" : false,
+        "numShards" : -1,
+        "partitionDimensions" : [ ]
+      },
+      "shardSpecs" : { },
+      "indexSpec" : {
+        "bitmap" : {
+          "type" : "concise"
+        },
+        "dimensionCompression" : "lz4",
+        "metricCompression" : "lz4",
+        "longEncoding" : "longs"
+      },
+      "maxRowsInMemory" : 75000,
+      "leaveIntermediate" : false,
+      "cleanupOnFailure" : true,
+      "overwriteFiles" : false,
+      "ignoreInvalidRows" : false,
+      "jobProperties" : { },
+      "combineText" : false,
+      "useCombiner" : false,
+      "buildV9Directly" : true,
+      "numBackgroundPersistThreads" : 0,
+      "forceExtendableShardSpecs" : false,
+      "useExplicitVersion" : false,
+      "allowedHadoopPrefix" : [ ]
+    },
+    "uniqueId" : "9e106f34f6b6471cb7aeb6431ca26011"
+  },
+  "hadoopDependencyCoordinates" : null,
+  "classpathPrefix" : null,
+  "context" : null,
+  "groupId" : "index_hadoop_air_2018-07-26T21:25:39.278Z",
+  "dataSource" : "air",
+  "resource" : {
+    "availabilityGroup" : "index_hadoop_air_2018-07-26T21:25:39.278Z",
+    "requiredCapacity" : 1
+  }
+}
+2018-07-26T21:25:47,523 INFO [main] io.druid.indexing.worker.executor.ExecutorLifecycle - Attempting to lock file[var/druid/task/index_hadoop_air_2018-07-26T21:25:39.278Z/lock].
+2018-07-26T21:25:47,526 INFO [main] io.druid.indexing.worker.executor.ExecutorLifecycle - Acquired lock file[var/druid/task/index_hadoop_air_2018-07-26T21:25:39.278Z/lock] in 3ms.
+2018-07-26T21:25:47,532 INFO [main] io.druid.indexing.common.actions.RemoteTaskActionClient - Performing action for task[index_hadoop_air_2018-07-26T21:25:39.278Z]: LockTryAcquireAction{interval=2004-03-10T00:00:00.000Z/2005-04-04T00:00:00.000Z}
+2018-07-26T21:25:47,546 INFO [main] io.druid.indexing.common.actions.RemoteTaskActionClient - Submitting action for task[index_hadoop_air_2018-07-26T21:25:39.278Z] to overlord: [LockTryAcquireAction{interval=2004-03-10T00:00:00.000Z/2005-04-04T00:00:00.000Z}].
+2018-07-26T21:25:47,547 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8090
+2018-07-26T21:25:47,548 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8090
+2018-07-26T21:25:47,549 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8090
+2018-07-26T21:25:47,550 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8090
+2018-07-26T21:25:47,551 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8090
+2018-07-26T21:25:47,552 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8090
+2018-07-26T21:25:47,553 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8090
+2018-07-26T21:25:47,555 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8090
+2018-07-26T21:25:47,556 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8090
+2018-07-26T21:25:47,557 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8090
+2018-07-26T21:25:47,558 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8090
+2018-07-26T21:25:47,561 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8090
+2018-07-26T21:25:47,563 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8090
+2018-07-26T21:25:47,565 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8090
+2018-07-26T21:25:47,566 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8090
+2018-07-26T21:25:47,570 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8090
+2018-07-26T21:25:47,573 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8090
+2018-07-26T21:25:47,574 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8090
+2018-07-26T21:25:47,577 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8090
+2018-07-26T21:25:47,579 INFO [main] com.metamx.http.client.pool.ChannelResourceFactory - Generating: http://attemptcontempt.corp.ne1.yahoo.com:8090
+2018-07-26T21:25:47,649 INFO [task-runner-0-priority-0] io.druid.indexing.overlord.ThreadPoolTaskRunner - Running task: index_hadoop_air_2018-07-26T21:25:39.278Z
+2018-07-26T21:25:47,650 INFO [task-runner-0-priority-0] io.druid.indexing.overlord.TaskRunnerUtils - Task [index_hadoop_air_2018-07-26T21:25:39.278Z] location changed to [TaskLocation{host='attemptcontempt.corp.ne1.yahoo.com', port=8100, tlsPort=-1}].
+2018-07-26T21:25:47,651 INFO [task-runner-0-priority-0] io.druid.indexing.overlord.TaskRunnerUtils - Task [index_hadoop_air_2018-07-26T21:25:39.278Z] status changed to [RUNNING].
+2018-07-26T21:25:47,657 INFO [main] org.eclipse.jetty.server.Server - jetty-9.3.19.v20170502
+2018-07-26T21:25:47,659 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/apacheds-i18n-2.0.0-M15.jar]
+2018-07-26T21:25:47,659 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/curator-framework-2.7.1.jar]
+2018-07-26T21:25:47,659 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/httpcore-4.2.5.jar]
+2018-07-26T21:25:47,660 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/commons-codec-1.4.jar]
+2018-07-26T21:25:47,661 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/hadoop-mapreduce-client-shuffle-2.7.3.jar]
+2018-07-26T21:25:47,661 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/hadoop-yarn-client-2.7.3.jar]
+2018-07-26T21:25:47,661 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/netty-all-4.0.23.Final.jar]
+2018-07-26T21:25:47,661 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/apacheds-kerberos-codec-2.0.0-M15.jar]
+2018-07-26T21:25:47,661 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/log4j-1.2.17.jar]
+2018-07-26T21:25:47,661 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/commons-compress-1.4.1.jar]
+2018-07-26T21:25:47,661 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/commons-digester-1.8.jar]
+2018-07-26T21:25:47,662 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/hadoop-common-2.7.3.jar]
+2018-07-26T21:25:47,662 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/commons-math3-3.1.1.jar]
+2018-07-26T21:25:47,662 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/jsr305-3.0.0.jar]
+2018-07-26T21:25:47,662 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/commons-io-2.4.jar]
+2018-07-26T21:25:47,662 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/paranamer-2.3.jar]
+2018-07-26T21:25:47,662 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/guava-11.0.2.jar]
+2018-07-26T21:25:47,662 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/curator-recipes-2.7.1.jar]
+2018-07-26T21:25:47,663 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/commons-logging-1.1.3.jar]
+2018-07-26T21:25:47,663 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/hadoop-yarn-api-2.7.3.jar]
+2018-07-26T21:25:47,663 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/commons-httpclient-3.1.jar]
+2018-07-26T21:25:47,663 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/commons-beanutils-1.7.0.jar]
+2018-07-26T21:25:47,663 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/gson-2.2.4.jar]
+2018-07-26T21:25:47,663 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/protobuf-java-2.5.0.jar]
+2018-07-26T21:25:47,663 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/hadoop-mapreduce-client-common-2.7.3.jar]
+2018-07-26T21:25:47,664 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/hadoop-hdfs-2.7.3.jar]
+2018-07-26T21:25:47,664 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/xz-1.0.jar]
+2018-07-26T21:25:47,664 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/zookeeper-3.4.6.jar]
+2018-07-26T21:25:47,664 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/leveldbjni-all-1.8.jar]
+2018-07-26T21:25:47,664 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/jackson-xc-1.9.13.jar]
+2018-07-26T21:25:47,664 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/netty-3.6.2.Final.jar]
+2018-07-26T21:25:47,666 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/hadoop-auth-2.7.3.jar]
+2018-07-26T21:25:47,666 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/hadoop-mapreduce-client-jobclient-2.7.3.jar]
+2018-07-26T21:25:47,666 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/api-util-1.0.0-M20.jar]
+2018-07-26T21:25:47,667 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/jackson-core-asl-1.9.13.jar]
+2018-07-26T21:25:47,667 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/jersey-core-1.9.jar]
+2018-07-26T21:25:47,667 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/jackson-jaxrs-1.9.13.jar]
+2018-07-26T21:25:47,667 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/jetty-util-6.1.26.jar]
+2018-07-26T21:25:47,667 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/xercesImpl-2.9.1.jar]
+2018-07-26T21:25:47,667 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/slf4j-log4j12-1.7.10.jar]
+2018-07-26T21:25:47,667 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/activation-1.1.jar]
+2018-07-26T21:25:47,668 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/stax-api-1.0-2.jar]
+2018-07-26T21:25:47,668 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/commons-collections-3.2.2.jar]
+2018-07-26T21:25:47,668 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/jersey-client-1.9.jar]
+2018-07-26T21:25:47,668 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/commons-beanutils-core-1.8.0.jar]
+2018-07-26T21:25:47,668 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/hadoop-yarn-server-common-2.7.3.jar]
+2018-07-26T21:25:47,669 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/servlet-api-2.5.jar]
+2018-07-26T21:25:47,669 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/commons-configuration-1.6.jar]
+2018-07-26T21:25:47,669 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/hadoop-mapreduce-client-app-2.7.3.jar]
+2018-07-26T21:25:47,669 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/snappy-java-1.0.4.1.jar]
+2018-07-26T21:25:47,674 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/commons-net-3.1.jar]
+2018-07-26T21:25:47,677 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/xml-apis-1.3.04.jar]
+2018-07-26T21:25:47,677 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/htrace-core-3.1.0-incubating.jar]
+2018-07-26T21:25:47,678 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/hadoop-yarn-common-2.7.3.jar]
+2018-07-26T21:25:47,678 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/jackson-mapper-asl-1.9.13.jar]
+2018-07-26T21:25:47,678 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/commons-lang-2.6.jar]
+2018-07-26T21:25:47,679 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/httpclient-4.2.5.jar]
+2018-07-26T21:25:47,679 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/hadoop-client-2.7.3.jar]
+2018-07-26T21:25:47,680 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/xmlenc-0.52.jar]
+2018-07-26T21:25:47,680 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/hadoop-mapreduce-client-core-2.7.3.jar]
+2018-07-26T21:25:47,680 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/jaxb-api-2.2.2.jar]
+2018-07-26T21:25:47,680 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/commons-cli-1.2.jar]
+2018-07-26T21:25:47,680 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/curator-client-2.7.1.jar]
+2018-07-26T21:25:47,681 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/hadoop-annotations-2.7.3.jar]
+2018-07-26T21:25:47,683 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/avro-1.7.4.jar]
+2018-07-26T21:25:47,683 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/jsp-api-2.1.jar]
+2018-07-26T21:25:47,683 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/api-asn1-api-1.0.0-M20.jar]
+2018-07-26T21:25:47,684 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/slf4j-api-1.7.10.jar]
+2018-07-26T21:25:47,684 INFO [task-runner-0-priority-0] io.druid.indexing.common.task.HadoopTask - Hadoop Container Druid Classpath is set to [file:/home/ylin08/druid-0.11.0/conf-quickstart/druid/_common/:file:/home/ylin08/druid-0.11.0/conf-quickstart/druid/middleManager/:file:/home/ylin08/druid-0.11.0/lib/commons-math3-3.6.1.jar:file:/home/ylin08/druid-0.11.0/lib/async-http-client-netty-utils-2.0.37.jar:file:/home/ylin08/druid-0.11.0/lib/jackson-databind-2.4.6.jar:file:/home/ylin08/druid-0.11.0/lib/aether-spi-0.9.0.M2.jar:file:/home/ylin08/druid-0.11.0/lib/aether-api-0.9.0.M2.jar:file:/home/ylin08/druid-0.11.0/lib/jackson-module-jaxb-annotations-2.4.6.jar:file:/home/ylin08/druid-0.11.0/lib/jline-0.9.94.jar:file:/home/ylin08/druid-0.11.0/lib/httpcore-4.4.3.jar:file:/home/ylin08/druid-0.11.0/lib/avatica-core-1.9.0.jar:file:/home/ylin08/druid-0.11.0/lib/jackson-core-2.4.6.jar:file:/home/ylin08/druid-0.11.0/lib/curator-x-discovery-4.0.0.jar:file:/home/ylin08/druid-0.11.0/lib/druid-server-0.11.0.jar:file:/home/ylin08/druid-0.11.0/lib/aether-impl-0.9.0.M2.jar:file:/home/ylin08/druid-0.11.0/lib/commons-lang3-3.2.jar:file:/home/ylin08/druid-0.11.0/lib/base64-2.3.8.jar:file:/home/ylin08/druid-0.11.0/lib/jersey-guice-1.19.3.jar:file:/home/ylin08/druid-0.11.0/lib/commons-dbcp2-2.0.1.jar:file:/home/ylin08/druid-0.11.0/lib/jersey-server-1.19.3.jar:file:/home/ylin08/druid-0.11.0/lib/spymemcached-2.12.3.jar:file:/home/ylin08/druid-0.11.0/lib/javax.inject-1.jar:file:/home/ylin08/druid-0.11.0/lib/jetty-security-9.3.19.v20170502.jar:file:/home/ylin08/druid-0.11.0/lib/asm-commons-5.2.jar:file:/home/ylin08/druid-0.11.0/lib/jetty-http-9.3.19.v20170502.jar:file:/home/ylin08/druid-0.11.0/lib/guava-16.0.1.jar:file:/home/ylin08/druid-0.11.0/lib/netty-resolver-dns-2.0.37.jar:file:/home/ylin08/druid-0.11.0/lib/jsr305-2.0.1.jar:file:/home/ylin08/druid-0.11.0/lib/geoip2-0.4.0.jar:file:/home/ylin08/druid-0.11.0/lib/reactive-streams-1.0.0.jar:file:/home/ylin08/druid-0.11.0/lib/plexus-interpolation-1.19.jar:file:/home/ylin08/druid-0.11.0/lib/netty-resolver-2.0.37.jar:file:/home/ylin08/druid-0.11.0/lib/commons-dbcp-1.4.jar:file:/home/ylin08/druid-0.11.0/lib/jetty-client-9.3.19.v20170502.jar:file:/home/ylin08/druid-0.11.0/lib/netty-buffer-4.0.52.Final.jar:file:/home/ylin08/druid-0.11.0/lib/jersey-servlet-1.19.3.jar:file:/home/ylin08/druid-0.11.0/lib/commons-io-2.5.jar:file:/home/ylin08/druid-0.11.0/lib/netty-handler-4.0.52.Final.jar:file:/home/ylin08/druid-0.11.0/lib/jets3t-0.9.4.jar:file:/home/ylin08/druid-0.11.0/lib/jackson-jaxrs-json-provider-2.4.6.jar:file:/home/ylin08/druid-0.11.0/lib/lz4-1.3.0.jar:file:/home/ylin08/druid-0.11.0/lib/netty-codec-dns-2.0.37.jar:file:/home/ylin08/druid-0.11.0/lib/druid-sql-0.11.0.jar:file:/home/ylin08/druid-0.11.0/lib/maven-repository-metadata-3.1.1.jar:file:/home/ylin08/druid-0.11.0/lib/jersey-core-1.19.3.jar:file:/home/ylin08/druid-0.11.0/lib/curator-recipes-4.0.0.jar:file:/home/ylin08/druid-0.11.0/lib/jackson-datatype-guava-2.4.6.jar:file:/home/ylin08/druid-0.11.0/lib/joni-2.1.11.jar:file:/home/ylin08/druid-0.11.0/lib/joda-time-2.9.9.jar:file:/home/ylin08/druid-0.11.0/lib/jackson-dataformat-cbor-2.5.3.jar:file:/home/ylin08/druid-0.11.0/lib/extendedset-0.11.0.jar:file:/home/ylin08/druid-0.11.0/lib/jackson-annotations-2.4.6.jar:file:/home/ylin08/druid-0.11.0/lib/druid-hll-0.11.0.jar:file:/home/ylin08/druid-0.11.0/lib/aether-connector-file-0.9.0.M2.jar:file:/home/ylin08/druid-0.11.0/lib/curator-client-4.0.0.jar:file:/home/ylin08/druid-0.11.0/lib/okhttp-1.0.2.jar:file:/home/ylin08/druid-0.11.0/lib/commons-codec-1.7.jar:file:/home/ylin08/druid-0.11.0/lib/config-magic-0.9.jar:file:/home/ylin08/druid-0.11.0/lib/maven-settings-3.1.1.jar:file:/home/ylin08/druid-0.11.0/lib/java-util-1.3.2.jar:file:/home/ylin08/druid-0.11.0/lib/java-xmlbuilder-1.1.jar:file:/home/ylin08/druid-0.11.0/lib/druid-services-0.11.0.jar:file:/home/ylin08/druid-0.11.0/lib/jackson-datatype-joda-2.4.6.jar:file:/home/ylin08/druid-0.11.0/lib/slf4j-api-1.6.4.jar:file:/home/ylin08/druid-0.11.0/lib/commons-pool2-2.2.jar:file:/home/ylin08/druid-0.11.0/lib/guice-4.1.0.jar:file:/home/ylin08/druid-0.11.0/lib/jackson-dataformat-smile-2.4.6.jar:file:/home/ylin08/druid-0.11.0/lib/json-path-2.1.0.jar:file:/home/ylin08/druid-0.11.0/lib/netty-reactive-streams-1.0.8.jar:file:/home/ylin08/druid-0.11.0/lib/aopalliance-1.0.jar:file:/home/ylin08/druid-0.11.0/lib/avatica-server-1.9.0.jar:file:/home/ylin08/druid-0.11.0/lib/janino-2.7.6.jar:file:/home/ylin08/druid-0.11.0/lib/netty-transport-4.0.52.Final.jar:file:/home/ylin08/druid-0.11.0/lib/airline-0.7.jar:file:/home/ylin08/druid-0.11.0/lib/jcl-over-slf4j-1.7.12.jar:file:/home/ylin08/druid-0.11.0/lib/log4j-core-2.5.jar:file:/home/ylin08/druid-0.11.0/lib/avatica-metrics-1.9.0.jar:file:/home/ylin08/druid-0.11.0/lib/druid-indexing-service-0.11.0.jar:file:/home/ylin08/druid-0.11.0/lib/jackson-core-asl-1.9.13.jar:file:/home/ylin08/druid-0.11.0/lib/maven-model-builder-3.1.1.jar:file:/home/ylin08/druid-0.11.0/lib/opencsv-2.3.jar:file:/home/ylin08/druid-0.11.0/lib/jetty-servlet-9.3.19.v20170502.jar:file:/home/ylin08/druid-0.11.0/lib/netty-transport-native-epoll-4.0.52.Final-linux-x86_64.jar:file:/home/ylin08/druid-0.11.0/lib/netty-codec-http-4.0.52.Final.jar:file:/home/ylin08/druid-0.11.0/lib/maven-settings-builder-3.1.1.jar:file:/home/ylin08/druid-0.11.0/lib/jetty-servlets-9.3.19.v20170502.jar:file:/home/ylin08/druid-0.11.0/lib/maven-aether-provider-3.1.1.jar:file:/home/ylin08/druid-0.11.0/lib/druid-aws-common-0.11.0.jar:file:/home/ylin08/druid-0.11.0/lib/commons-logging-1.1.1.jar:file:/home/ylin08/druid-0.11.0/lib/jcodings-1.0.13.jar:file:/home/ylin08/druid-0.11.0/lib/disruptor-3.3.6.jar:file:/home/ylin08/druid-0.11.0/lib/derbyclient-10.11.1.1.jar:file:/home/ylin08/druid-0.11.0/lib/async-http-client-2.0.37.jar:file:/home/ylin08/druid-0.11.0/lib/hibernate-validator-5.1.3.Final.jar:file:/home/ylin08/druid-0.11.0/lib/compress-lzf-1.0.3.jar:file:/home/ylin08/druid-0.11.0/lib/derby-10.11.1.1.jar:file:/home/ylin08/druid-0.11.0/lib/icu4j-54.1.1.jar:file:/home/ylin08/druid-0.11.0/lib/plexus-utils-3.0.15.jar:file:/home/ylin08/druid-0.11.0/lib/jsr311-api-1.1.1.jar:file:/home/ylin08/druid-0.11.0/lib/aggdesigner-algorithm-6.0.jar:file:/home/ylin08/druid-0.11.0/lib/log4j-api-2.5.jar:file:/home/ylin08/druid-0.11.0/lib/tesla-aether-0.0.5.jar:file:/home/ylin08/druid-0.11.0/lib/netty-common-4.0.52.Final.jar:file:/home/ylin08/druid-0.11.0/lib/aether-util-0.9.0.M2.jar:file:/home/ylin08/druid-0.11.0/lib/druid-indexing-hadoop-0.11.0.jar:file:/home/ylin08/druid-0.11.0/lib/aether-connector-okhttp-0.0.9.jar:file:/home/ylin08/druid-0.11.0/lib/jackson-jaxrs-smile-provider-2.4.6.jar:file:/home/ylin08/druid-0.11.0/lib/wagon-provider-api-2.4.jar:file:/home/ylin08/druid-0.11.0/lib/aws-java-sdk-ec2-1.10.77.jar:file:/home/ylin08/druid-0.11.0/lib/druid-console-0.0.2.jar:file:/home/ylin08/druid-0.11.0/lib/jetty-server-9.3.19.v20170502.jar:file:/home/ylin08/druid-0.11.0/lib/commons-compiler-2.7.6.jar:file:/home/ylin08/druid-0.11.0/lib/druid-processing-0.11.0.jar:file:/home/ylin08/druid-0.11.0/lib/jetty-util-9.3.19.v20170502.jar:file:/home/ylin08/druid-0.11.0/lib/jetty-continuation-9.3.19.v20170502.jar:file:/home/ylin08/druid-0.11.0/lib/validation-api-1.1.0.Final.jar:file:/home/ylin08/druid-0.11.0/lib/jackson-mapper-asl-1.9.13.jar:file:/home/ylin08/druid-0.11.0/lib/commons-pool-1.6.jar:file:/home/ylin08/druid-0.11.0/lib/maven-model-3.1.1.jar:file:/home/ylin08/druid-0.11.0/lib/bytebuffer-collections-0.11.0.jar:file:/home/ylin08/druid-0.11.0/lib/commons-lang-2.6.jar:file:/home/ylin08/druid-0.11.0/lib/javax.el-3.0.0.jar:file:/home/ylin08/druid-0.11.0/lib/netty-all-4.0.52.Final.jar:file:/home/ylin08/druid-0.11.0/lib/log4j-1.2-api-2.5.jar:file:/home/ylin08/druid-0.11.0/lib/asm-tree-5.2.jar:file:/home/ylin08/druid-0.11.0/lib/protobuf-java-3.1.0.jar:file:/home/ylin08/druid-0.11.0/lib/javax.el-api-3.0.0.jar:file:/home/ylin08/druid-0.11.0/lib/jetty-io-9.3.19.v20170502.jar:file:/home/ylin08/druid-0.11.0/lib/calcite-linq4j-1.12.0.jar:file:/home/ylin08/druid-0.11.0/lib/rhino-1.7R5.jar:file:/home/ylin08/druid-0.11.0/lib/jackson-jq-0.0.7.jar:file:/home/ylin08/druid-0.11.0/lib/log4j-jul-2.5.jar:file:/home/ylin08/druid-0.11.0/lib/bcprov-jdk15on-1.52.jar:file:/home/ylin08/druid-0.11.0/lib/aws-java-sdk-core-1.10.77.jar:file:/home/ylin08/druid-0.11.0/lib/zookeeper-3.4.10.jar:file:/home/ylin08/druid-0.11.0/lib/druid-api-0.11.0.jar:file:/home/ylin08/druid-0.11.0/lib/classmate-1.0.0.jar:file:/home/ylin08/druid-0.11.0/lib/netty-3.10.6.Final.jar:file:/home/ylin08/druid-0.11.0/lib/druid-common-0.11.0.jar:file:/home/ylin08/druid-0.11.0/lib/calcite-core-1.12.0.jar:file:/home/ylin08/druid-0.11.0/lib/jetty-proxy-9.3.19.v20170502.jar:file:/home/ylin08/druid-0.11.0/lib/curator-framework-4.0.0.jar:file:/home/ylin08/druid-0.11.0/lib/antlr4-runtime-4.5.1.jar:file:/home/ylin08/druid-0.11.0/lib/guice-multibindings-4.1.0.jar:file:/home/ylin08/druid-0.11.0/lib/jvm-attach-api-1.2.jar:file:/home/ylin08/druid-0.11.0/lib/commons-cli-1.2.jar:file:/home/ylin08/druid-0.11.0/lib/mapdb-1.0.8.jar:file:/home/ylin08/druid-0.11.0/lib/jackson-jaxrs-base-2.4.6.jar:file:/home/ylin08/druid-0.11.0/lib/fastutil-7.2.0.jar:file:/home/ylin08/druid-0.11.0/lib/javax.servlet-api-3.1.0.jar:file:/home/ylin08/druid-0.11.0/lib/derbynet-10.11.1.1.jar:file:/home/ylin08/druid-0.11.0/lib/asm-5.2.jar:file:/home/ylin08/druid-0.11.0/lib/jdbi-2.63.1.jar:file:/home/ylin08/druid-0.11.0/lib/activation-1.1.1.jar:file:/home/ylin08/druid-0.11.0/lib/java-util-0.11.0.jar:file:/home/ylin08/druid-0.11.0/lib/guice-servlet-4.1.0.jar:file:/home/ylin08/druid-0.11.0/lib/jboss-logging-3.1.3.GA.jar:file:/home/ylin08/druid-0.11.0/lib/irc-api-1.0-0014.jar:file:/home/ylin08/druid-0.11.0/lib/log4j-slf4j-impl-2.5.jar:file:/home/ylin08/druid-0.11.0/lib/maxminddb-0.2.0.jar:file:/home/ylin08/druid-0.11.0/lib/netty-codec-4.0.52.Final.jar:file:/home/ylin08/druid-0.11.0/lib/RoaringBitmap-0.5.18.jar:file:/home/ylin08/druid-0.11.0/lib/httpclient-4.5.1.jar:file:/home/ylin08/druid-0.11.0/extensions/druid-datasketches/memory-0.8.4.jar:file:/home/ylin08/druid-0.11.0/extensions/druid-datasketches/sketches-core-0.8.4.jar:file:/home/ylin08/druid-0.11.0/extensions/druid-datasketches/druid-datasketches-0.11.0.jar]
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/ylin08/druid-0.11.0/lib/log4j-slf4j-impl-2.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/ylin08/druid-0.11.0/hadoop-dependencies/hadoop-client/2.7.3/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+2018-07-26T21:25:47,870 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Registering com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider as a provider class
+2018-07-26T21:25:47,870 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Registering com.fasterxml.jackson.jaxrs.smile.JacksonSmileProvider as a provider class
+2018-07-26T21:25:47,871 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Registering io.druid.server.initialization.jetty.CustomExceptionMapper as a provider class
+2018-07-26T21:25:47,872 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Registering io.druid.server.initialization.jetty.ForbiddenExceptionMapper as a provider class
+2018-07-26T21:25:47,872 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Registering io.druid.server.StatusResource as a root resource class
+2018-07-26T21:25:47,875 INFO [main] com.sun.jersey.server.impl.application.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.3 10/24/2016 03:43 PM'
+2018-07-26T21:25:47,975 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding io.druid.server.initialization.jetty.CustomExceptionMapper to GuiceManagedComponentProvider with the scope "Singleton"
+2018-07-26T21:25:47,977 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding io.druid.server.initialization.jetty.ForbiddenExceptionMapper to GuiceManagedComponentProvider with the scope "Singleton"
+2018-07-26T21:25:47,978 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider to GuiceManagedComponentProvider with the scope "Singleton"
+2018-07-26T21:25:47,989 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding com.fasterxml.jackson.jaxrs.smile.JacksonSmileProvider to GuiceManagedComponentProvider with the scope "Singleton"
+2018-07-26 21:25:48,402 task-runner-0-priority-0 WARN JNDI lookup class is not available because this JRE does not support JNDI. JNDI string lookups will not be available, continuing configuration. java.lang.ClassCastException: Cannot cast org.apache.logging.log4j.core.lookup.JndiLookup to org.apache.logging.log4j.core.lookup.StrLookup
+	at java.lang.Class.cast(Class.java:3369)
+	at org.apache.logging.log4j.util.LoaderUtil.newCheckedInstanceOf(LoaderUtil.java:167)
+	at org.apache.logging.log4j.core.util.Loader.newCheckedInstanceOf(Loader.java:301)
+	at org.apache.logging.log4j.core.lookup.Interpolator.<init>(Interpolator.java:94)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.<init>(AbstractConfiguration.java:111)
+	at org.apache.logging.log4j.core.config.DefaultConfiguration.<init>(DefaultConfiguration.java:48)
+	at org.apache.logging.log4j.core.LoggerContext.<init>(LoggerContext.java:75)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.createContext(ClassLoaderContextSelector.java:171)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.locateContext(ClassLoaderContextSelector.java:145)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:70)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:57)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:140)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:41)
+	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:182)
+	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getContext(AbstractLoggerAdapter.java:103)
+	at org.apache.logging.log4j.jul.AbstractLoggerAdapter.getContext(AbstractLoggerAdapter.java:34)
+	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:42)
+	at org.apache.logging.log4j.jul.LogManager.getLogger(LogManager.java:89)
+	at java.util.logging.LogManager.demandLogger(LogManager.java:551)
+	at java.util.logging.Logger.demandLogger(Logger.java:455)
+	at java.util.logging.Logger.getLogger(Logger.java:502)
+	at com.google.inject.internal.util.Stopwatch.<clinit>(Stopwatch.java:27)
+	at com.google.inject.internal.InternalInjectorCreator.<init>(InternalInjectorCreator.java:61)
+	at com.google.inject.Guice.createInjector(Guice.java:96)
+	at com.google.inject.Guice.createInjector(Guice.java:73)
+	at io.druid.guice.GuiceInjectors.makeStartupInjector(GuiceInjectors.java:60)
+	at io.druid.indexer.HadoopDruidIndexerConfig.<clinit>(HadoopDruidIndexerConfig.java:105)
+	at io.druid.indexing.common.task.HadoopIndexTask$HadoopDetermineConfigInnerProcessing.runTask(HadoopIndexTask.java:295)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.druid.indexing.common.task.HadoopTask.invokeForeignLoader(HadoopTask.java:215)
+	at io.druid.indexing.common.task.HadoopIndexTask.run(HadoopIndexTask.java:177)
+	at io.druid.indexing.overlord.ThreadPoolTaskRunner$ThreadPoolTaskRunnerCallable.call(ThreadPoolTaskRunner.java:436)
+	at io.druid.indexing.overlord.ThreadPoolTaskRunner$ThreadPoolTaskRunnerCallable.call(ThreadPoolTaskRunner.java:408)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-07-26 21:25:48,406 task-runner-0-priority-0 WARN JMX runtime input lookup class is not available because this JRE does not support JMX. JMX lookups will not be available, continuing configuration. java.lang.ClassCastException: Cannot cast org.apache.logging.log4j.core.lookup.JmxRuntimeInputArgumentsLookup to org.apache.logging.log4j.core.lookup.StrLookup
+	at java.lang.Class.cast(Class.java:3369)
+	at org.apache.logging.log4j.util.LoaderUtil.newCheckedInstanceOf(LoaderUtil.java:167)
+	at org.apache.logging.log4j.core.util.Loader.newCheckedInstanceOf(Loader.java:301)
+	at org.apache.logging.log4j.core.lookup.Interpolator.<init>(Interpolator.java:105)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.<init>(AbstractConfiguration.java:111)
+	at org.apache.logging.log4j.core.config.DefaultConfiguration.<init>(DefaultConfiguration.java:48)
+	at org.apache.logging.log4j.core.LoggerContext.<init>(LoggerContext.java:75)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.createContext(ClassLoaderContextSelector.java:171)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.locateContext(ClassLoaderContextSelector.java:145)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:70)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:57)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:140)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:41)
+	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:182)
+	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getContext(AbstractLoggerAdapter.java:103)
+	at org.apache.logging.log4j.jul.AbstractLoggerAdapter.getContext(AbstractLoggerAdapter.java:34)
+	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:42)
+	at org.apache.logging.log4j.jul.LogManager.getLogger(LogManager.java:89)
+	at java.util.logging.LogManager.demandLogger(LogManager.java:551)
+	at java.util.logging.Logger.demandLogger(Logger.java:455)
+	at java.util.logging.Logger.getLogger(Logger.java:502)
+	at com.google.inject.internal.util.Stopwatch.<clinit>(Stopwatch.java:27)
+	at com.google.inject.internal.InternalInjectorCreator.<init>(InternalInjectorCreator.java:61)
+	at com.google.inject.Guice.createInjector(Guice.java:96)
+	at com.google.inject.Guice.createInjector(Guice.java:73)
+	at io.druid.guice.GuiceInjectors.makeStartupInjector(GuiceInjectors.java:60)
+	at io.druid.indexer.HadoopDruidIndexerConfig.<clinit>(HadoopDruidIndexerConfig.java:105)
+	at io.druid.indexing.common.task.HadoopIndexTask$HadoopDetermineConfigInnerProcessing.runTask(HadoopIndexTask.java:295)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.druid.indexing.common.task.HadoopTask.invokeForeignLoader(HadoopTask.java:215)
+	at io.druid.indexing.common.task.HadoopIndexTask.run(HadoopIndexTask.java:177)
+	at io.druid.indexing.overlord.ThreadPoolTaskRunner$ThreadPoolTaskRunnerCallable.call(ThreadPoolTaskRunner.java:436)
+	at io.druid.indexing.overlord.ThreadPoolTaskRunner$ThreadPoolTaskRunnerCallable.call(ThreadPoolTaskRunner.java:408)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-07-26 21:25:48,440 task-runner-0-priority-0 WARN JNDI lookup class is not available because this JRE does not support JNDI. JNDI string lookups will not be available, continuing configuration. java.lang.ClassCastException: Cannot cast org.apache.logging.log4j.core.lookup.JndiLookup to org.apache.logging.log4j.core.lookup.StrLookup
+	at java.lang.Class.cast(Class.java:3369)
+	at org.apache.logging.log4j.util.LoaderUtil.newCheckedInstanceOf(LoaderUtil.java:167)
+	at org.apache.logging.log4j.core.util.Loader.newCheckedInstanceOf(Loader.java:301)
+	at org.apache.logging.log4j.core.lookup.Interpolator.<init>(Interpolator.java:94)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.<init>(AbstractConfiguration.java:111)
+	at org.apache.logging.log4j.core.config.xml.XmlConfiguration.<init>(XmlConfiguration.java:81)
+	at org.apache.logging.log4j.core.config.xml.XmlConfigurationFactory.getConfiguration(XmlConfigurationFactory.java:44)
+	at org.apache.logging.log4j.core.config.ConfigurationFactory$Factory.getConfiguration(ConfigurationFactory.java:490)
+	at org.apache.logging.log4j.core.config.ConfigurationFactory$Factory.getConfiguration(ConfigurationFactory.java:460)
+	at org.apache.logging.log4j.core.config.ConfigurationFactory.getConfiguration(ConfigurationFactory.java:256)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:561)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:578)
+	at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:214)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:145)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:41)
+	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:182)
+	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getContext(AbstractLoggerAdapter.java:103)
+	at org.apache.logging.log4j.jul.AbstractLoggerAdapter.getContext(AbstractLoggerAdapter.java:34)
+	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:42)
+	at org.apache.logging.log4j.jul.LogManager.getLogger(LogManager.java:89)
+	at java.util.logging.LogManager.demandLogger(LogManager.java:551)
+	at java.util.logging.Logger.demandLogger(Logger.java:455)
+	at java.util.logging.Logger.getLogger(Logger.java:502)
+	at com.google.inject.internal.util.Stopwatch.<clinit>(Stopwatch.java:27)
+	at com.google.inject.internal.InternalInjectorCreator.<init>(InternalInjectorCreator.java:61)
+	at com.google.inject.Guice.createInjector(Guice.java:96)
+	at com.google.inject.Guice.createInjector(Guice.java:73)
+	at io.druid.guice.GuiceInjectors.makeStartupInjector(GuiceInjectors.java:60)
+	at io.druid.indexer.HadoopDruidIndexerConfig.<clinit>(HadoopDruidIndexerConfig.java:105)
+	at io.druid.indexing.common.task.HadoopIndexTask$HadoopDetermineConfigInnerProcessing.runTask(HadoopIndexTask.java:295)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.druid.indexing.common.task.HadoopTask.invokeForeignLoader(HadoopTask.java:215)
+	at io.druid.indexing.common.task.HadoopIndexTask.run(HadoopIndexTask.java:177)
+	at io.druid.indexing.overlord.ThreadPoolTaskRunner$ThreadPoolTaskRunnerCallable.call(ThreadPoolTaskRunner.java:436)
+	at io.druid.indexing.overlord.ThreadPoolTaskRunner$ThreadPoolTaskRunnerCallable.call(ThreadPoolTaskRunner.java:408)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-07-26 21:25:48,443 task-runner-0-priority-0 WARN JMX runtime input lookup class is not available because this JRE does not support JMX. JMX lookups will not be available, continuing configuration. java.lang.ClassCastException: Cannot cast org.apache.logging.log4j.core.lookup.JmxRuntimeInputArgumentsLookup to org.apache.logging.log4j.core.lookup.StrLookup
+	at java.lang.Class.cast(Class.java:3369)
+	at org.apache.logging.log4j.util.LoaderUtil.newCheckedInstanceOf(LoaderUtil.java:167)
+	at org.apache.logging.log4j.core.util.Loader.newCheckedInstanceOf(Loader.java:301)
+	at org.apache.logging.log4j.core.lookup.Interpolator.<init>(Interpolator.java:105)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.<init>(AbstractConfiguration.java:111)
+	at org.apache.logging.log4j.core.config.xml.XmlConfiguration.<init>(XmlConfiguration.java:81)
+	at org.apache.logging.log4j.core.config.xml.XmlConfigurationFactory.getConfiguration(XmlConfigurationFactory.java:44)
+	at org.apache.logging.log4j.core.config.ConfigurationFactory$Factory.getConfiguration(ConfigurationFactory.java:490)
+	at org.apache.logging.log4j.core.config.ConfigurationFactory$Factory.getConfiguration(ConfigurationFactory.java:460)
+	at org.apache.logging.log4j.core.config.ConfigurationFactory.getConfiguration(ConfigurationFactory.java:256)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:561)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:578)
+	at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:214)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:145)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:41)
+	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:182)
+	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getContext(AbstractLoggerAdapter.java:103)
+	at org.apache.logging.log4j.jul.AbstractLoggerAdapter.getContext(AbstractLoggerAdapter.java:34)
+	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:42)
+	at org.apache.logging.log4j.jul.LogManager.getLogger(LogManager.java:89)
+	at java.util.logging.LogManager.demandLogger(LogManager.java:551)
+	at java.util.logging.Logger.demandLogger(Logger.java:455)
+	at java.util.logging.Logger.getLogger(Logger.java:502)
+	at com.google.inject.internal.util.Stopwatch.<clinit>(Stopwatch.java:27)
+	at com.google.inject.internal.InternalInjectorCreator.<init>(InternalInjectorCreator.java:61)
+	at com.google.inject.Guice.createInjector(Guice.java:96)
+	at com.google.inject.Guice.createInjector(Guice.java:73)
+	at io.druid.guice.GuiceInjectors.makeStartupInjector(GuiceInjectors.java:60)
+	at io.druid.indexer.HadoopDruidIndexerConfig.<clinit>(HadoopDruidIndexerConfig.java:105)
+	at io.druid.indexing.common.task.HadoopIndexTask$HadoopDetermineConfigInnerProcessing.runTask(HadoopIndexTask.java:295)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.druid.indexing.common.task.HadoopTask.invokeForeignLoader(HadoopTask.java:215)
+	at io.druid.indexing.common.task.HadoopIndexTask.run(HadoopIndexTask.java:177)
+	at io.druid.indexing.overlord.ThreadPoolTaskRunner$ThreadPoolTaskRunnerCallable.call(ThreadPoolTaskRunner.java:436)
+	at io.druid.indexing.overlord.ThreadPoolTaskRunner$ThreadPoolTaskRunnerCallable.call(ThreadPoolTaskRunner.java:408)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-07-26 21:25:48,455 task-runner-0-priority-0 WARN JNDI lookup class is not available because this JRE does not support JNDI. JNDI string lookups will not be available, continuing configuration. java.lang.ClassCastException: Cannot cast org.apache.logging.log4j.core.lookup.JndiLookup to org.apache.logging.log4j.core.lookup.StrLookup
+	at java.lang.Class.cast(Class.java:3369)
+	at org.apache.logging.log4j.util.LoaderUtil.newCheckedInstanceOf(LoaderUtil.java:167)
+	at org.apache.logging.log4j.core.util.Loader.newCheckedInstanceOf(Loader.java:301)
+	at org.apache.logging.log4j.core.lookup.Interpolator.<init>(Interpolator.java:94)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.<init>(AbstractConfiguration.java:111)
+	at org.apache.logging.log4j.core.config.DefaultConfiguration.<init>(DefaultConfiguration.java:48)
+	at org.apache.logging.log4j.core.layout.PatternLayout$Builder.build(PatternLayout.java:444)
+	at org.apache.logging.log4j.core.layout.PatternLayout.createDefaultLayout(PatternLayout.java:327)
+	at org.apache.logging.log4j.core.appender.ConsoleAppender$Builder.<init>(ConsoleAppender.java:157)
+	at org.apache.logging.log4j.core.appender.ConsoleAppender.newBuilder(ConsoleAppender.java:149)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.logging.log4j.core.config.plugins.util.PluginBuilder.createBuilder(PluginBuilder.java:154)
+	at org.apache.logging.log4j.core.config.plugins.util.PluginBuilder.build(PluginBuilder.java:119)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.createPluginObject(AbstractConfiguration.java:888)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:828)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:820)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.doConfigure(AbstractConfiguration.java:449)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.initialize(AbstractConfiguration.java:197)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.start(AbstractConfiguration.java:209)
+	at org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:492)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:562)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:578)
+	at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:214)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:145)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:41)
+	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:182)
+	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getContext(AbstractLoggerAdapter.java:103)
+	at org.apache.logging.log4j.jul.AbstractLoggerAdapter.getContext(AbstractLoggerAdapter.java:34)
+	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:42)
+	at org.apache.logging.log4j.jul.LogManager.getLogger(LogManager.java:89)
+	at java.util.logging.LogManager.demandLogger(LogManager.java:551)
+	at java.util.logging.Logger.demandLogger(Logger.java:455)
+	at java.util.logging.Logger.getLogger(Logger.java:502)
+	at com.google.inject.internal.util.Stopwatch.<clinit>(Stopwatch.java:27)
+	at com.google.inject.internal.InternalInjectorCreator.<init>(InternalInjectorCreator.java:61)
+	at com.google.inject.Guice.createInjector(Guice.java:96)
+	at com.google.inject.Guice.createInjector(Guice.java:73)
+	at io.druid.guice.GuiceInjectors.makeStartupInjector(GuiceInjectors.java:60)
+	at io.druid.indexer.HadoopDruidIndexerConfig.<clinit>(HadoopDruidIndexerConfig.java:105)
+	at io.druid.indexing.common.task.HadoopIndexTask$HadoopDetermineConfigInnerProcessing.runTask(HadoopIndexTask.java:295)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.druid.indexing.common.task.HadoopTask.invokeForeignLoader(HadoopTask.java:215)
+	at io.druid.indexing.common.task.HadoopIndexTask.run(HadoopIndexTask.java:177)
+	at io.druid.indexing.overlord.ThreadPoolTaskRunner$ThreadPoolTaskRunnerCallable.call(ThreadPoolTaskRunner.java:436)
+	at io.druid.indexing.overlord.ThreadPoolTaskRunner$ThreadPoolTaskRunnerCallable.call(ThreadPoolTaskRunner.java:408)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-07-26 21:25:48,457 task-runner-0-priority-0 WARN JMX runtime input lookup class is not available because this JRE does not support JMX. JMX lookups will not be available, continuing configuration. java.lang.ClassCastException: Cannot cast org.apache.logging.log4j.core.lookup.JmxRuntimeInputArgumentsLookup to org.apache.logging.log4j.core.lookup.StrLookup
+	at java.lang.Class.cast(Class.java:3369)
+	at org.apache.logging.log4j.util.LoaderUtil.newCheckedInstanceOf(LoaderUtil.java:167)
+	at org.apache.logging.log4j.core.util.Loader.newCheckedInstanceOf(Loader.java:301)
+	at org.apache.logging.log4j.core.lookup.Interpolator.<init>(Interpolator.java:105)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.<init>(AbstractConfiguration.java:111)
+	at org.apache.logging.log4j.core.config.DefaultConfiguration.<init>(DefaultConfiguration.java:48)
+	at org.apache.logging.log4j.core.layout.PatternLayout$Builder.build(PatternLayout.java:444)
+	at org.apache.logging.log4j.core.layout.PatternLayout.createDefaultLayout(PatternLayout.java:327)
+	at org.apache.logging.log4j.core.appender.ConsoleAppender$Builder.<init>(ConsoleAppender.java:157)
+	at org.apache.logging.log4j.core.appender.ConsoleAppender.newBuilder(ConsoleAppender.java:149)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.logging.log4j.core.config.plugins.util.PluginBuilder.createBuilder(PluginBuilder.java:154)
+	at org.apache.logging.log4j.core.config.plugins.util.PluginBuilder.build(PluginBuilder.java:119)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.createPluginObject(AbstractConfiguration.java:888)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:828)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.createConfiguration(AbstractConfiguration.java:820)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.doConfigure(AbstractConfiguration.java:449)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.initialize(AbstractConfiguration.java:197)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.start(AbstractConfiguration.java:209)
+	at org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:492)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:562)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:578)
+	at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:214)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:145)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:41)
+	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:182)
+	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getContext(AbstractLoggerAdapter.java:103)
+	at org.apache.logging.log4j.jul.AbstractLoggerAdapter.getContext(AbstractLoggerAdapter.java:34)
+	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:42)
+	at org.apache.logging.log4j.jul.LogManager.getLogger(LogManager.java:89)
+	at java.util.logging.LogManager.demandLogger(LogManager.java:551)
+	at java.util.logging.Logger.demandLogger(Logger.java:455)
+	at java.util.logging.Logger.getLogger(Logger.java:502)
+	at com.google.inject.internal.util.Stopwatch.<clinit>(Stopwatch.java:27)
+	at com.google.inject.internal.InternalInjectorCreator.<init>(InternalInjectorCreator.java:61)
+	at com.google.inject.Guice.createInjector(Guice.java:96)
+	at com.google.inject.Guice.createInjector(Guice.java:73)
+	at io.druid.guice.GuiceInjectors.makeStartupInjector(GuiceInjectors.java:60)
+	at io.druid.indexer.HadoopDruidIndexerConfig.<clinit>(HadoopDruidIndexerConfig.java:105)
+	at io.druid.indexing.common.task.HadoopIndexTask$HadoopDetermineConfigInnerProcessing.runTask(HadoopIndexTask.java:295)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.druid.indexing.common.task.HadoopTask.invokeForeignLoader(HadoopTask.java:215)
+	at io.druid.indexing.common.task.HadoopIndexTask.run(HadoopIndexTask.java:177)
+	at io.druid.indexing.overlord.ThreadPoolTaskRunner$ThreadPoolTaskRunnerCallable.call(ThreadPoolTaskRunner.java:436)
+	at io.druid.indexing.overlord.ThreadPoolTaskRunner$ThreadPoolTaskRunnerCallable.call(ThreadPoolTaskRunner.java:408)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-07-26T21:25:48,625 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding io.druid.server.http.security.StateResourceFilter to GuiceInstantiatedComponentProvider
+2018-07-26T21:25:48,690 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding io.druid.server.http.SegmentListerResource to GuiceInstantiatedComponentProvider
+2018-07-26T21:25:48,713 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding io.druid.server.QueryResource to GuiceInstantiatedComponentProvider
+2018-07-26T21:25:48,723 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding io.druid.segment.realtime.firehose.ChatHandlerResource to GuiceInstantiatedComponentProvider
+2018-07-26T21:25:48,735 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding io.druid.server.http.security.ConfigResourceFilter to GuiceInstantiatedComponentProvider
+2018-07-26T21:25:48,741 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding io.druid.query.lookup.LookupListeningResource to GuiceInstantiatedComponentProvider
+2018-07-26T21:25:48,744 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding io.druid.query.lookup.LookupIntrospectionResource to GuiceInstantiatedComponentProvider
+2018-07-26T21:25:48,745 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding io.druid.server.StatusResource to GuiceManagedComponentProvider with the scope "Undefined"
+2018-07-26T21:25:48,782 WARN [main] com.sun.jersey.spi.inject.Errors - The following warnings have been detected with resource and/or provider classes:
+  WARNING: A HTTP GET method, public void io.druid.server.http.SegmentListerResource.getSegments(long,long,long,javax.servlet.http.HttpServletRequest) throws java.io.IOException, MUST return a non-void type.
+2018-07-26T21:25:48,857 INFO [task-runner-0-priority-0] io.druid.guice.PropertiesModule - Loading properties from common.runtime.properties
+2018-07-26T21:25:48,865 INFO [task-runner-0-priority-0] io.druid.guice.PropertiesModule - Loading properties from runtime.properties
+2018-07-26T21:25:48,877 INFO [main] org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@bb3ecfe{/,null,AVAILABLE}
+2018-07-26T21:25:48,906 INFO [main] org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@46394f65{HTTP/1.1,[http/1.1]}{0.0.0.0:8100}
+2018-07-26T21:25:48,907 INFO [main] org.eclipse.jetty.server.Server - Started @8814ms
+2018-07-26T21:25:48,908 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking start method[public void io.druid.server.listener.announcer.ListenerResourceAnnouncer.start()] on object[io.druid.query.lookup.LookupResourceListenerAnnouncer@411fa0ce].
+2018-07-26T21:25:48,952 INFO [main] io.druid.server.listener.announcer.ListenerResourceAnnouncer - Announcing start time on [/druid/listeners/lookups/__default/http:attemptcontempt.corp.ne1.yahoo.com:8100]
+2018-07-26T21:25:48,954 INFO [task-runner-0-priority-0] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.3.Final
+2018-07-26T21:25:49,503 INFO [task-runner-0-priority-0] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.guice.ModulesConfig] from props[druid.modules.] as [ModulesConfig{excludeList=[]}]
+2018-07-26T21:25:49,715 INFO [task-runner-0-priority-0] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.guice.ExtensionsConfig] from props[druid.extensions.] as [ExtensionsConfig{searchCurrentClassloader=true, directory='extensions', hadoopDependenciesDir='hadoop-dependencies', hadoopContainerDruidClasspath='null', addExtensionsToHadoopContainer=false, loadList=[druid-datasketches]}]
+2018-07-26T21:25:49,723 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - Adding implementation [io.druid.query.aggregation.datasketches.theta.SketchModule] for class [interface io.druid.initialization.DruidModule] from classpath extension
+2018-07-26T21:25:49,724 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - Adding implementation [io.druid.query.aggregation.datasketches.theta.oldapi.OldApiSketchModule] for class [interface io.druid.initialization.DruidModule] from classpath extension
+2018-07-26T21:25:49,724 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - Loading extension [druid-datasketches] for class [interface io.druid.initialization.DruidModule]
+2018-07-26T21:25:49,738 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/extensions/druid-datasketches/memory-0.8.4.jar]
+2018-07-26T21:25:49,738 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/extensions/druid-datasketches/sketches-core-0.8.4.jar]
+2018-07-26T21:25:49,738 INFO [task-runner-0-priority-0] io.druid.initialization.Initialization - added URL[file:/home/ylin08/druid-0.11.0/extensions/druid-datasketches/druid-datasketches-0.11.0.jar]
+2018-07-26T21:25:50,507 INFO [task-runner-0-priority-0] io.druid.guice.JsonConfigurator - Loaded class[class com.metamx.emitter.core.LoggingEmitterConfig] from props[druid.emitter.logging.] as [LoggingEmitterConfig{loggerClass='com.metamx.emitter.core.LoggingEmitter', logLevel='info'}]
+2018-07-26T21:25:50,537 INFO [task-runner-0-priority-0] io.druid.guice.JsonConfigurator - Loaded class[interface io.druid.server.security.Escalator] from props[druid.escalator.] as [io.druid.server.security.NoopEscalator@141798b1]
+2018-07-26T21:25:50,551 INFO [task-runner-0-priority-0] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.curator.CuratorConfig] from props[druid.zk.service.] as [io.druid.curator.CuratorConfig@6d546806]
+2018-07-26T21:25:50,558 INFO [task-runner-0-priority-0] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.curator.ExhibitorConfig] from props[druid.exhibitor.service.] as [io.druid.curator.ExhibitorConfig@69fbdc72]
+2018-07-26T21:25:50,633 INFO [task-runner-0-priority-0] org.apache.curator.utils.Compatibility - Running in ZooKeeper 3.4.x compatibility mode
+2018-07-26T21:25:50,635 WARN [task-runner-0-priority-0] org.apache.curator.retry.ExponentialBackoffRetry - maxRetries too large (30). Pinning to 29
+2018-07-26T21:25:50,681 INFO [task-runner-0-priority-0] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.server.initialization.ZkPathsConfig] from props[druid.zk.paths.] as [io.druid.server.initialization.ZkPathsConfig@22e2266d]
+2018-07-26T21:25:50,702 INFO [task-runner-0-priority-0] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.server.security.AuthConfig] from props[druid.auth.] as [AuthConfig{authenticatorChain='null', authorizers='null'}]
+2018-07-26T21:25:51,001 INFO [task-runner-0-priority-0] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.server.metrics.DruidMonitorSchedulerConfig] from props[druid.monitoring.] as [io.druid.server.metrics.DruidMonitorSchedulerConfig@488f96bf]
+2018-07-26T21:25:51,020 INFO [task-runner-0-priority-0] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.server.metrics.MonitorsConfig] from props[druid.monitoring.] as [MonitorsConfig{monitors=[class com.metamx.metrics.JvmMonitor]}]
+2018-07-26T21:25:51,021 INFO [task-runner-0-priority-0] io.druid.server.emitter.EmitterModule - Underlying emitter for ServiceEmitter: LoggingEmitter{log=com.metamx.common.logger.Logger@47441610, level=INFO}
+2018-07-26T21:25:51,042 INFO [task-runner-0-priority-0] io.druid.server.metrics.MetricsModule - Adding monitor[com.metamx.metrics.JvmMonitor@6b54c188]
+2018-07-26T21:25:51,045 INFO [task-runner-0-priority-0] io.druid.server.metrics.MetricsModule - Adding monitor[io.druid.server.initialization.jetty.JettyServerModule$JettyMonitor@49fac49a]
+2018-07-26T21:25:51,052 INFO [task-runner-0-priority-0] org.skife.config.ConfigurationObjectFactory - Assigning value [256000000] for [druid.processing.buffer.sizeBytes] on [io.druid.query.DruidProcessingConfig#intermediateComputeSizeBytes()]
+2018-07-26T21:25:51,055 INFO [task-runner-0-priority-0] org.skife.config.ConfigurationObjectFactory - Using method itself for [druid.computation.buffer.poolCacheMaxCount, ${base_path}.buffer.poolCacheMaxCount] on [io.druid.query.DruidProcessingConfig#poolCacheMaxCount()]
+2018-07-26T21:25:51,056 INFO [task-runner-0-priority-0] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.numMergeBuffers] on [io.druid.query.DruidProcessingConfig#getNumMergeBuffersConfigured()]
+2018-07-26T21:25:51,057 INFO [task-runner-0-priority-0] org.skife.config.ConfigurationObjectFactory - Assigning value [2] for [druid.processing.numThreads] on [io.druid.query.DruidProcessingConfig#getNumThreadsConfigured()]
+2018-07-26T21:25:51,057 INFO [task-runner-0-priority-0] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.tmpDir] on [io.druid.query.DruidProcessingConfig#getTmpDir()]
+2018-07-26T21:25:51,057 INFO [task-runner-0-priority-0] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.fifo] on [io.druid.query.DruidProcessingConfig#isFifo()]
+2018-07-26T21:25:51,057 INFO [task-runner-0-priority-0] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.columnCache.sizeBytes] on [io.druid.query.DruidProcessingConfig#columnCacheSizeBytes()]
+2018-07-26T21:25:51,058 INFO [task-runner-0-priority-0] org.skife.config.ConfigurationObjectFactory - Assigning default value [processing-%s] for [${base_path}.formatString] on [io.druid.java.util.common.concurrent.ExecutorServiceConfig#getFormatString()]
+2018-07-26T21:25:51,172 INFO [task-runner-0-priority-0] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.indexer.HadoopKerberosConfig] from props[druid.hadoop.security.kerberos.] as [io.druid.indexer.HadoopKerberosConfig@0]
+2018-07-26T21:25:51,178 INFO [task-runner-0-priority-0] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.segment.loading.LocalDataSegmentPusherConfig] from props[druid.storage.] as [io.druid.segment.loading.LocalDataSegmentPusherConfig@48237d10]
+2018-07-26T21:25:51,179 INFO [task-runner-0-priority-0] io.druid.segment.loading.LocalDataSegmentPusher - Configured local filesystem as deep storage
+2018-07-26T21:25:51,402 INFO [task-runner-0-priority-0] io.druid.guice.PropertiesModule - Loading properties from common.runtime.properties
+2018-07-26T21:25:51,402 INFO [task-runner-0-priority-0] io.druid.guice.PropertiesModule - Loading properties from runtime.properties
+2018-07-26T21:25:51,418 INFO [task-runner-0-priority-0] io.druid.guice.JsonConfigurator - Loaded class[class io.druid.guice.ExtensionsConfig] from props[druid.extensions.] as [ExtensionsConfig{searchCurrentClassloader=true, directory='extensions', hadoopDependenciesDir='hadoop-dependencies', hadoopContainerDruidClasspath='null', addExtensionsToHadoopContainer=false, loadList=[druid-datasketches]}]
+2018-07-26T21:25:51,419 INFO [task-runner-0-priority-0] io.druid.indexing.common.task.HadoopIndexTask - Starting a hadoop determine configuration job...
+2018-07-26T21:25:51,774 WARN [task-runner-0-priority-0] org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-07-26T21:25:51,789 INFO [task-runner-0-priority-0] io.druid.indexer.path.StaticPathSpec - Adding paths[quickstart/airQuality.json]
+2018-07-26T21:25:52,108 INFO [task-runner-0-priority-0] io.druid.indexer.path.StaticPathSpec - Adding paths[quickstart/airQuality.json]
+2018-07-26T21:25:52,185 INFO [task-runner-0-priority-0] org.apache.hadoop.conf.Configuration.deprecation - session.id is deprecated. Instead, use dfs.metrics.session-id
+2018-07-26T21:25:52,186 INFO [task-runner-0-priority-0] org.apache.hadoop.metrics.jvm.JvmMetrics - Initializing JVM Metrics with processName=JobTracker, sessionId=
+2018-07-26T21:25:52,282 WARN [task-runner-0-priority-0] org.apache.hadoop.mapreduce.JobResourceUploader - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2018-07-26T21:25:52,295 WARN [task-runner-0-priority-0] org.apache.hadoop.mapreduce.JobResourceUploader - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2018-07-26T21:25:52,314 INFO [task-runner-0-priority-0] org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2018-07-26T21:25:52,393 INFO [task-runner-0-priority-0] org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+2018-07-26T21:25:52,549 INFO [task-runner-0-priority-0] org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_local1945918382_0001
+2018-07-26T21:25:52,729 INFO [task-runner-0-priority-0] org.apache.hadoop.mapreduce.Job - The url to track the job: http://localhost:8080/
+2018-07-26T21:25:52,730 INFO [task-runner-0-priority-0] io.druid.indexer.DetermineHashedPartitionsJob - Job air-determine_partitions_hashed-Optional.of([2004-03-10T00:00:00.000Z/2005-04-04T00:00:00.000Z]) submitted, status available at: http://localhost:8080/
+2018-07-26T21:25:52,731 INFO [task-runner-0-priority-0] org.apache.hadoop.mapreduce.Job - Running job: job_local1945918382_0001
+2018-07-26T21:25:52,766 INFO [Thread-29] org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter set in config null
+2018-07-26T21:25:52,775 INFO [Thread-29] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2018-07-26T21:25:52,778 INFO [Thread-29] org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2018-07-26T21:25:52,849 INFO [Thread-29] org.apache.hadoop.mapred.LocalJobRunner - Waiting for map tasks
+2018-07-26T21:25:52,850 INFO [LocalJobRunner Map Task Executor #0] org.apache.hadoop.mapred.LocalJobRunner - Starting task: attempt_local1945918382_0001_m_000000_0
+2018-07-26T21:25:52,893 INFO [LocalJobRunner Map Task Executor #0] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 1
+2018-07-26T21:25:52,920 INFO [LocalJobRunner Map Task Executor #0] org.apache.hadoop.mapred.Task -  Using ResourceCalculatorProcessTree : [ ]
+2018-07-26T21:25:52,926 INFO [LocalJobRunner Map Task Executor #0] org.apache.hadoop.mapred.MapTask - Processing split: file:/home/ylin08/druid-0.11.0/quickstart/airQuality.json:0+2359889
+2018-07-26T21:25:53,031 INFO [LocalJobRunner Map Task Executor #0] org.apache.hadoop.mapred.MapTask - (EQUATOR) 0 kvi 26214396(104857584)
+2018-07-26T21:25:53,031 INFO [LocalJobRunner Map Task Executor #0] org.apache.hadoop.mapred.MapTask - mapreduce.task.io.sort.mb: 100
+2018-07-26T21:25:53,031 INFO [LocalJobRunner Map Task Executor #0] org.apache.hadoop.mapred.MapTask - soft limit at 83886080
+2018-07-26T21:25:53,031 INFO [LocalJobRunner Map Task Executor #0] org.apache.hadoop.mapred.MapTask - bufstart = 0; bufvoid = 104857600
+2018-07-26T21:25:53,031 INFO [LocalJobRunner Map Task Executor #0] org.apache.hadoop.mapred.MapTask - kvstart = 26214396; length = 6553600
+2018-07-26T21:25:53,036 INFO [LocalJobRunner Map Task Executor #0] org.apache.hadoop.mapred.MapTask - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-07-26T21:25:53,067 INFO [LocalJobRunner Map Task Executor #0] io.druid.indexer.HadoopDruidIndexerConfig - Running with config:
+{
+  "spec" : {
+    "dataSchema" : {
+      "dataSource" : "air",
+      "parser" : {
+        "type" : "hadoopyString",
+        "parseSpec" : {
+          "format" : "json",
+          "dimensionsSpec" : {
+            "dimensions" : [ "PT08.S4(NO2)", "CO(GT)", "T", "PT08.S3(NOx)", "AH", "NOx(GT)", "C6H6(GT)", "PT08.S2(NMHC)", "NMHC(GT)", "PT08.S1(CO)", "NO2(GT)", "PT08.S5(O3)", "RH" ]
+          },
+          "timestampSpec" : {
+            "format" : "auto",
+            "column" : "Time"
+          }
+        }
+      },
+      "metricsSpec" : [ {
+        "type" : "count",
+        "name" : "count"
+      }, {
+        "type" : "longSum",
+        "name" : "CO(GT)",
+        "fieldName" : "CO(GT)",
+        "expression" : null
+      }, {
+        "type" : "longSum",
+        "name" : "T",
+        "fieldName" : "T",
+        "expression" : null
+      }, {
+        "type" : "longSum",
+        "name" : "PT08.S4(NO2)",
+        "fieldName" : "PT08.S4(NO2)",
+        "expression" : null
+      } ],
+      "granularitySpec" : {
+        "type" : "uniform",
+        "segmentGranularity" : "DAY",
+        "queryGranularity" : {
+          "type" : "none"
+        },
+        "rollup" : true,
+        "intervals" : [ "2004-03-10T00:00:00.000Z/2005-04-04T00:00:00.000Z" ]
+      }
+    },
+    "ioConfig" : {
+      "type" : "hadoop",
+      "inputSpec" : {
+        "type" : "static",
+        "paths" : "quickstart/airQuality.json"
+      },
+      "metadataUpdateSpec" : null,
+      "segmentOutputPath" : "file:/home/ylin08/druid-0.11.0/var/druid/segments/"
+    },
+    "tuningConfig" : {
+      "type" : "hadoop",
+      "workingPath" : "var/druid/hadoop-tmp",
+      "version" : "2018-07-26T21:25:39.243Z",
+      "partitionsSpec" : {
+        "type" : "hashed",
+        "targetPartitionSize" : 5000000,
+        "maxPartitionSize" : 7500000,
+        "assumeGrouped" : false,
+        "numShards" : -1,
+        "partitionDimensions" : [ ]
+      },
+      "shardSpecs" : { },
+      "indexSpec" : {
+        "bitmap" : {
+          "type" : "concise"
+        },
+        "dimensionCompression" : "lz4",
+        "metricCompression" : "lz4",
+        "longEncoding" : "longs"
+      },
+      "maxRowsInMemory" : 75000,
+      "leaveIntermediate" : false,
+      "cleanupOnFailure" : true,
+      "overwriteFiles" : false,
+      "ignoreInvalidRows" : false,
+      "jobProperties" : { },
+      "combineText" : false,
+      "useCombiner" : false,
+      "buildV9Directly" : true,
+      "numBackgroundPersistThreads" : 0,
+      "forceExtendableShardSpecs" : false,
+      "useExplicitVersion" : false,
+      "allowedHadoopPrefix" : [ ]
+    },
+    "uniqueId" : "9e106f34f6b6471cb7aeb6431ca26011"
+  }
+}
+2018-07-26T21:25:53,488 INFO [Thread-29] org.apache.hadoop.mapred.LocalJobRunner - map task executor complete.
+2018-07-26T21:25:53,490 WARN [Thread-29] org.apache.hadoop.mapred.LocalJobRunner - job_local1945918382_0001
+java.lang.Exception: io.druid.java.util.common.IAE: Cannot have overlapping dimensions and metrics of the same name. Please change the name of the metric. Overlap: [CO(GT), T, PT08.S4(NO2)]
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:462) ~[hadoop-mapreduce-client-common-2.7.3.jar:?]
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:522) [hadoop-mapreduce-client-common-2.7.3.jar:?]
+Caused by: io.druid.java.util.common.IAE: Cannot have overlapping dimensions and metrics of the same name. Please change the name of the metric. Overlap: [CO(GT), T, PT08.S4(NO2)]
+	at io.druid.segment.indexing.DataSchema.getParser(DataSchema.java:138) ~[druid-server-0.11.0.jar:0.11.0]
+	at io.druid.indexer.HadoopDruidIndexerConfig.verify(HadoopDruidIndexerConfig.java:589) ~[druid-indexing-hadoop-0.11.0.jar:0.11.0]
+	at io.druid.indexer.HadoopDruidIndexerConfig.fromConfiguration(HadoopDruidIndexerConfig.java:210) ~[druid-indexing-hadoop-0.11.0.jar:0.11.0]
+	at io.druid.indexer.DetermineHashedPartitionsJob$DetermineHashedPartitionsPartitioner.setConf(DetermineHashedPartitionsJob.java:421) ~[druid-indexing-hadoop-0.11.0.jar:0.11.0]
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:76) ~[hadoop-common-2.7.3.jar:?]
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:136) ~[hadoop-common-2.7.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.<init>(MapTask.java:702) ~[hadoop-mapreduce-client-core-2.7.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:770) ~[hadoop-mapreduce-client-core-2.7.3.jar:?]
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341) ~[hadoop-mapreduce-client-core-2.7.3.jar:?]
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243) ~[hadoop-mapreduce-client-common-2.7.3.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_131]
+2018-07-26T21:25:53,733 INFO [task-runner-0-priority-0] org.apache.hadoop.mapreduce.Job - Job job_local1945918382_0001 running in uber mode : false
+2018-07-26T21:25:53,735 INFO [task-runner-0-priority-0] org.apache.hadoop.mapreduce.Job -  map 0% reduce 0%
+2018-07-26T21:25:53,738 INFO [task-runner-0-priority-0] org.apache.hadoop.mapreduce.Job - Job job_local1945918382_0001 failed with state FAILED due to: NA
+2018-07-26T21:25:53,749 INFO [task-runner-0-priority-0] org.apache.hadoop.mapreduce.Job - Counters: 0
+2018-07-26T21:25:53,749 ERROR [task-runner-0-priority-0] io.druid.indexer.DetermineHashedPartitionsJob - Job failed: job_local1945918382_0001
+2018-07-26T21:25:53,750 INFO [task-runner-0-priority-0] io.druid.indexer.JobHelper - Deleting path[var/druid/hadoop-tmp/air/2018-07-26T212539.243Z_9e106f34f6b6471cb7aeb6431ca26011]
+2018-07-26T21:25:53,777 ERROR [task-runner-0-priority-0] io.druid.indexing.overlord.ThreadPoolTaskRunner - Exception while running task[HadoopIndexTask{id=index_hadoop_air_2018-07-26T21:25:39.278Z, type=index_hadoop, dataSource=air}]
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at com.google.common.base.Throwables.propagate(Throwables.java:160) ~[guava-16.0.1.jar:?]
+	at io.druid.indexing.common.task.HadoopTask.invokeForeignLoader(HadoopTask.java:218) ~[druid-indexing-service-0.11.0.jar:0.11.0]
+	at io.druid.indexing.common.task.HadoopIndexTask.run(HadoopIndexTask.java:177) ~[druid-indexing-service-0.11.0.jar:0.11.0]
+	at io.druid.indexing.overlord.ThreadPoolTaskRunner$ThreadPoolTaskRunnerCallable.call(ThreadPoolTaskRunner.java:436) [druid-indexing-service-0.11.0.jar:0.11.0]
+	at io.druid.indexing.overlord.ThreadPoolTaskRunner$ThreadPoolTaskRunnerCallable.call(ThreadPoolTaskRunner.java:408) [druid-indexing-service-0.11.0.jar:0.11.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_131]
+	at io.druid.indexing.common.task.HadoopTask.invokeForeignLoader(HadoopTask.java:215) ~[druid-indexing-service-0.11.0.jar:0.11.0]
+	... 7 more
+Caused by: io.druid.java.util.common.ISE: Job[class io.druid.indexer.DetermineHashedPartitionsJob] failed!
+	at io.druid.indexer.JobHelper.runJobs(JobHelper.java:390) ~[druid-indexing-hadoop-0.11.0.jar:0.11.0]
+	at io.druid.indexer.HadoopDruidDetermineConfigurationJob.run(HadoopDruidDetermineConfigurationJob.java:91) ~[druid-indexing-hadoop-0.11.0.jar:0.11.0]
+	at io.druid.indexing.common.task.HadoopIndexTask$HadoopDetermineConfigInnerProcessing.runTask(HadoopIndexTask.java:309) ~[druid-indexing-service-0.11.0.jar:0.11.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_131]
+	at io.druid.indexing.common.task.HadoopTask.invokeForeignLoader(HadoopTask.java:215) ~[druid-indexing-service-0.11.0.jar:0.11.0]
+	... 7 more
+2018-07-26T21:25:53,786 INFO [task-runner-0-priority-0] io.druid.indexing.overlord.TaskRunnerUtils - Task [index_hadoop_air_2018-07-26T21:25:39.278Z] status changed to [FAILED].
+2018-07-26T21:25:53,792 INFO [task-runner-0-priority-0] io.druid.indexing.worker.executor.ExecutorLifecycle - Task completed with status: {
+  "id" : "index_hadoop_air_2018-07-26T21:25:39.278Z",
+  "status" : "FAILED",
+  "duration" : 6137
+}
+2018-07-26T21:25:53,802 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking stop method[public void io.druid.server.listener.announcer.ListenerResourceAnnouncer.stop()] on object[io.druid.query.lookup.LookupResourceListenerAnnouncer@411fa0ce].
+2018-07-26T21:25:53,802 INFO [main] io.druid.curator.announcement.Announcer - unannouncing [/druid/listeners/lookups/__default/http:attemptcontempt.corp.ne1.yahoo.com:8100]
+2018-07-26T21:25:53,821 INFO [main] io.druid.server.listener.announcer.ListenerResourceAnnouncer - Unannouncing start time on [/druid/listeners/lookups/__default/http:attemptcontempt.corp.ne1.yahoo.com:8100]
+2018-07-26T21:25:53,827 INFO [main] org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@46394f65{HTTP/1.1,[http/1.1]}{0.0.0.0:8100}
+2018-07-26T21:25:53,830 INFO [main] org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@bb3ecfe{/,null,UNAVAILABLE}
+2018-07-26T21:25:53,834 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking stop method[public void io.druid.indexing.worker.executor.ExecutorLifecycle.stop() throws java.lang.Exception] on object[io.druid.indexing.worker.executor.ExecutorLifecycle@3443e476].
+2018-07-26T21:25:53,834 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking stop method[public void io.druid.indexing.overlord.ThreadPoolTaskRunner.stop()] on object[io.druid.indexing.overlord.ThreadPoolTaskRunner@b1b471].
+2018-07-26T21:25:53,836 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking stop method[public void io.druid.curator.announcement.Announcer.stop()] on object[io.druid.curator.announcement.Announcer@ca8ef3a].
+2018-07-26T21:25:53,836 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking stop method[public void io.druid.discovery.DruidLeaderClient.stop()] on object[io.druid.discovery.DruidLeaderClient@474179fa].
+2018-07-26T21:25:53,836 INFO [main] io.druid.discovery.DruidLeaderClient - Stopped.
+2018-07-26T21:25:53,837 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking stop method[public void io.druid.curator.discovery.ServerDiscoverySelector.stop() throws java.io.IOException] on object[io.druid.curator.discovery.ServerDiscoverySelector@7ea2412c].
+2018-07-26T21:25:53,839 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking stop method[public void com.metamx.metrics.MonitorScheduler.stop()] on object[com.metamx.metrics.MonitorScheduler@48eaf42f].
+2018-07-26T21:25:53,839 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking stop method[public void io.druid.query.lookup.LookupReferencesManager.stop()] on object[io.druid.query.lookup.LookupReferencesManager@415ef4d8].
+2018-07-26T21:25:53,840 INFO [main] io.druid.query.lookup.LookupReferencesManager - LookupReferencesManager is stopping.
+2018-07-26T21:25:53,840 INFO [LookupReferencesManager-MainThread] io.druid.query.lookup.LookupReferencesManager - Lookup Management loop exited, Lookup notices are not handled anymore.
+2018-07-26T21:25:53,840 INFO [main] io.druid.query.lookup.LookupReferencesManager - LookupReferencesManager is stopped.
+2018-07-26T21:25:53,840 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking stop method[public void io.druid.discovery.DruidLeaderClient.stop()] on object[io.druid.discovery.DruidLeaderClient@4733f6f5].
+2018-07-26T21:25:53,840 INFO [main] io.druid.discovery.DruidLeaderClient - Stopped.
+2018-07-26T21:25:53,840 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking stop method[public void io.druid.curator.discovery.ServerDiscoverySelector.stop() throws java.io.IOException] on object[io.druid.curator.discovery.ServerDiscoverySelector@47c7a9e5].
+2018-07-26T21:25:53,841 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking stop method[public void io.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider.stop()] on object[io.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider@65bb6275].
+2018-07-26T21:25:53,841 INFO [main] io.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider - stopping
+2018-07-26T21:25:53,842 INFO [main] io.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider - stopped
+2018-07-26T21:25:53,842 INFO [main] com.metamx.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking stop method[public void com.metamx.http.client.NettyHttpClient.stop()] on object[com.metamx.http.client.NettyHttpClient@5261ec9].
+2018-07-26T21:25:53,902 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking stop method[public void com.metamx.emitter.service.ServiceEmitter.close() throws java.io.IOException] on object[ServiceEmitter{serviceDimensions={service=druid/middleManager, host=attemptcontempt.corp.ne1.yahoo.com:8100, version=0.11.0}, emitter=LoggingEmitter{log=com.metamx.common.logger.Logger@476e8796, level=INFO}}].
+2018-07-26T21:25:53,902 INFO [main] com.metamx.emitter.core.LoggingEmitter - Close: started [false]
+2018-07-26T21:25:53,903 INFO [main] io.druid.java.util.common.lifecycle.Lifecycle$AnnotationBasedHandler - Invoking stop method[public void io.druid.initialization.Log4jShutterDownerModule$Log4jShutterDowner.stop()] on object[io.druid.initialization.Log4jShutterDownerModule$Log4jShutterDowner@3fa21d49].
